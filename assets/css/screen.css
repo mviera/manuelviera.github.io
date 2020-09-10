@@ -3170,6 +3170,7 @@ body:not(.paged-next) .infinite-scroll-button {
 }
 @media (prefers-color-scheme: dark) {
   html:not(.theme-light):root {
+    --brand-color: #b987e5;
     --primary-text-color: #e2e2e2;
     --secondary-text-color: #868686;
     --white-color: #282c35;
@@ -3202,6 +3203,9 @@ body:not(.paged-next) .infinite-scroll-button {
   }
   html:not(.theme-light) .share-link-twitter {
     color: var(--twitter-color);
+  }
+  html:not(.theme-light) mark {
+    background: linear-gradient(to top, #b987e5a3 50%, transparent 50%);
   }
 }
 
