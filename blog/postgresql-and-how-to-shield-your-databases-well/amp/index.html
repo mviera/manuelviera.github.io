@@ -19,7 +19,7 @@
     <meta property="og:url" content="http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/">
     <meta property="og:image" content="https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
     <meta property="article:published_time" content="2020-09-13T17:09:07.000Z">
-    <meta property="article:modified_time" content="2020-09-13T19:27:56.000Z">
+    <meta property="article:modified_time" content="2020-09-13T20:50:46.000Z">
     <meta property="article:tag" content="tech">
     
     <meta name="twitter:card" content="summary_large_image">
@@ -69,7 +69,7 @@
     "headline": "PostgreSQL and how to shield your databases well",
     "url": "http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/",
     "datePublished": "2020-09-13T17:09:07.000Z",
-    "dateModified": "2020-09-13T19:27:56.000Z",
+    "dateModified": "2020-09-13T20:50:46.000Z",
     "image": {
         "@type": "ImageObject",
         "url": "https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
@@ -175,8 +175,9 @@ REVOKE ALL ON SCHEMA public FROM public;
 <p>In case you have to operate on it with <code>postgres</code> user, you'll need to grant access for it.</p>
 <pre><code>GRANT myuser TO postgres;
 </code></pre>
-<p>If not, you'll get a permission denied error.</p>
-<hr>If you find it, coffee is always appreciated. Thanks in advance!
+<p>If not, you'll get a <code>permission denied</code> error.</p>
+<hr><p>If you have any question, doubt, or any improvement I could do, feel free to let me know in this <a href="https://twitter.com/mviera/status/1305246434023870465">Twitter thread</a> :)</p>
+If you found it useful, coffee is always appreciated. Thanks in advance!
 <h3 id="moreinfoat">More info at</h3>
 <p><a href="https://aws.amazon.com/de/blogs/database/managing-postgresql-users-and-roles/">Managing PostgreSQL users and roles</a><br>
 <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.html#Appendix.PostgreSQL.CommonDBATasks.Access">Managing PostgreSQL Database Access</a><br>
