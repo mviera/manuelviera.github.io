@@ -32,7 +32,8 @@
     }
   </script>
 
-  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+  <meta name="description" content="Security matters, especially in databases. Let me show you how to secure your database in the right way.">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
     <link rel="canonical" href="index.html">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <link rel="amphtml" href="amp/index.html">
@@ -44,7 +45,7 @@
     <meta property="og:url" content="http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/">
     <meta property="og:image" content="https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
     <meta property="article:published_time" content="2020-09-13T17:09:07.000Z">
-    <meta property="article:modified_time" content="2020-09-13T17:13:53.000Z">
+    <meta property="article:modified_time" content="2020-09-13T19:27:56.000Z">
     <meta property="article:tag" content="tech">
     
     <meta name="twitter:card" content="summary_large_image">
@@ -94,7 +95,7 @@
     "headline": "PostgreSQL and how to shield your databases well",
     "url": "http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/",
     "datePublished": "2020-09-13T17:09:07.000Z",
-    "dateModified": "2020-09-13T17:13:53.000Z",
+    "dateModified": "2020-09-13T19:27:56.000Z",
     "image": {
         "@type": "ImageObject",
         "url": "https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
@@ -294,7 +295,7 @@ REVOKE myuser FROM postgres;
 <p>There are a few things you need to know to understand a bit about how PostgreSQL works.</p>
 <ol>
 <li>
-<p><code>CREATE USER</code> and <code>CREATE GROUP</code> are aliases for the <code>CREATE ROLE</code> statement. An user is just a role with <code>LOGIN</code> privileges.</p>
+<p><code>CREATE USER</code> and <code>CREATE GROUP</code> are aliases for the <code>CREATE ROLE</code> statement. A user is just a role with <code>LOGIN</code> privileges.</p>
 <pre><code> CREATE USER = CREATE ROLE + LOGIN privilege
 </code></pre>
 </li>
@@ -328,13 +329,15 @@ REVOKE ALL ON SCHEMA public FROM public;
 <p>Now the user is the real owner.</p>
 <h3 id="thefinalpart">The final part</h3>
 <p>Execute this query if you want to revoke access to this database even to <code>postgres</code> user. It's up to you.</p>
-<p>REVOKE myuser FROM postgres;</p>
+<pre><code>REVOKE myuser FROM postgres;
+</code></pre>
 <p>Remember. After this, even though <code>postgres</code> user, which is the user with more RDS privileges, won't have access to that database. It'll only be accessible for <code>myuser</code> user.</p>
 <p>In case you have to operate on it with <code>postgres</code> user, you'll need to grant access for it.</p>
-<p>GRANT myuser TO postgres;</p>
+<pre><code>GRANT myuser TO postgres;
+</code></pre>
 <p>If not, you'll get a permission denied error.</p>
 <!--kg-card-end: markdown--><hr><!--kg-card-begin: html-->If you find it, coffee is always appreciated. Thanks in advance!
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="mviera" data-color="#FFDD00" data-emoji="" data-font="Arial" data-text="Buy me a coffee" data-outline-color="#000" data-font-color="#000" data-coffee-color="#fff"></script><!--kg-card-end: html--><!--kg-card-begin: markdown--><h3 id="moreinfoat">More info at</h3>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="mviera" data-color="#eaa700" data-emoji="" data-font="Arial" data-text="Buy me a coffee" data-outline-color="#000" data-font-color="#000" data-coffee-color="#fff"></script><!--kg-card-end: html--><!--kg-card-begin: markdown--><h3 id="moreinfoat">More info at</h3>
 <p><a href="https://aws.amazon.com/de/blogs/database/managing-postgresql-users-and-roles/">Managing PostgreSQL users and roles</a><br>
 <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.html#Appendix.PostgreSQL.CommonDBATasks.Access">Managing PostgreSQL Database Access</a><br>
 <a href="https://www.postgresql.org/docs/9.0/sql-grant.html">PostgreSQL GRANT Documentation</a><br>
