@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Find and the importance of parameters order</title>
+    <title>PostgreSQL and how to shield your databases well</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -13,19 +13,19 @@
     
     <meta property="og:site_name" content="Manuel Viera">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Find and the importance of parameters order">
-    <meta property="og:description" content="Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it.">
-    <meta property="og:url" content="http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
-    <meta property="article:published_time" content="2020-08-10T14:53:00.000Z">
-    <meta property="article:modified_time" content="2020-09-13T17:21:17.000Z">
+    <meta property="og:title" content="PostgreSQL and how to shield your databases well">
+    <meta property="og:description" content="Security matters, especially in databases. Let me show you how to secure your database in the right way.">
+    <meta property="og:url" content="http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
+    <meta property="article:published_time" content="2020-09-13T17:09:07.000Z">
+    <meta property="article:modified_time" content="2020-09-13T17:13:53.000Z">
     <meta property="article:tag" content="tech">
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Find and the importance of parameters order">
-    <meta name="twitter:description" content="Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it.">
-    <meta name="twitter:url" content="http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
+    <meta name="twitter:title" content="PostgreSQL and how to shield your databases well">
+    <meta name="twitter:description" content="Security matters, especially in databases. Let me show you how to secure your database in the right way.">
+    <meta name="twitter:url" content="http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Manuel Viera">
     <meta name="twitter:label2" content="Filed under">
@@ -65,18 +65,18 @@
             "https://twitter.com/mviera"
         ]
     },
-    "headline": "Find and the importance of parameters order",
-    "url": "http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/",
-    "datePublished": "2020-08-10T14:53:00.000Z",
-    "dateModified": "2020-09-13T17:21:17.000Z",
+    "headline": "PostgreSQL and how to shield your databases well",
+    "url": "http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/",
+    "datePublished": "2020-09-13T17:09:07.000Z",
+    "dateModified": "2020-09-13T17:13:53.000Z",
     "image": {
         "@type": "ImageObject",
-        "url": "https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "url": "https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
         "width": 2000,
         "height": 1333
     },
     "keywords": "tech",
-    "description": "Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it.",
+    "description": "Security matters, especially in databases. Let me show you how to secure your database in the right way.",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://manuelviera.com/"
@@ -108,41 +108,77 @@
         <article class="post">
 
             <header class="post-header">
-                <h1 class="post-title">Find and the importance of parameters order</h1>
+                <h1 class="post-title">PostgreSQL and how to shield your databases well</h1>
                 <section class="post-meta">
                     <p class="author">by <a href="../../../author/mviera/">Manuel Viera</a></p>
-                    <time class="post-date" datetime="2020-08-10">2020-08-10</time>
+                    <time class="post-date" datetime="2020-09-13">2020-09-13</time>
                 </section>
             </header>
             <figure class="post-image">
-                <amp-img src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" width="600" height="400" layout="responsive"></amp-img>
+                <amp-img src="https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" width="600" height="400" layout="responsive"></amp-img>
             </figure>
             <section class="post-content">
 
-                <p>Someone texted me with this tweet a few weeks ago. It made me remember how important the order of the parameters in some commands could be. Let's see the tweet.</p>
-<figure class="kg-card kg-embed-card"><blockquote class="twitter-tweet" data-width="550"><p lang="en" dir="ltr">I wanted to delete every file called "contents.html" so I ran:<br><br>find -type f -delete -name contents.html<br><br>It worked! But it also deleted every other file.<br><br>find's args are ordered. "delete" works on every match before it, ignoring anything after. "name" should have gone first.</p>— Tomas Sedovic (@TomasSedovic) <a href="https://twitter.com/TomasSedovic/status/1226462687170875398?ref_src=twsrc%5Etfw">February 9, 2020</a></blockquote>
-
-</figure><p>As you may have noticed, some commands, such as find, take its parameters in order. So, this command:</p>
-<pre><code>find -type f -delete -name contents.html
+                <p>The recipe:</p>
+<pre><code>CREATE USER myuser with password 'secret_passwd' role postgres;
+CREATE DATABASE mydatabase with owner myuser;
+\connect mydatabase
+REMOVE ALL ON DATABASE mydatabase FROM public;
+REVOKE ALL ON SCHEMA public FROM public;    
+ALTER SCHEMA public owner to myuser;
+REVOKE myuser FROM postgres;
 </code></pre>
-<p>is completely different from this another one:</p>
-<pre><code>find -type f -name contents.html -delete
+<hr>
+<h2 id="thedeepdive">The deep dive</h2>
+<h3 id="firstthingsfirst">First things first</h3>
+<p>There are a few things you need to know to understand a bit about how PostgreSQL works.</p>
+<ol>
+<li>
+<p><code>CREATE USER</code> and <code>CREATE GROUP</code> are aliases for the <code>CREATE ROLE</code> statement. An user is just a role with <code>LOGIN</code> privileges.</p>
+<pre><code> CREATE USER = CREATE ROLE + LOGIN privilege
 </code></pre>
-<p><mark>The first one says find to look for every regular file and delete it. The second one says to look for every standard file that matches precisely with <code>contents.html</code> and then delete it.</mark></p>
-<p>As Tomas says in his tweet, the first one worked, but unfortunately, deleted all files, which could be a mess in a production system.</p>
-<h2 id="sohowtoavoidthiskindofsituation">So, how to avoid this kind of situation?</h2>
-<p>First of all, mainly when I'm in a production system, I prefer to start typing a «<code>#</code>» as the first character. Why? Because I want to <mark>avoid executing an unfinished command by hitting the <code>Enter</code> key by mistake</mark>.</p>
-<p>Instead of this, I <mark>always print the find's output first to ensure that it finds what we need</mark>.</p>
-<pre><code>find -type f -name contents.html -exec echo {} \;
+</li>
+<li>
+<p>PostgreSQL has a <code>public</code> backend role, and every new user and role inherits permissions from it.</p>
+</li>
+<li>
+<p>When a new database is created, PostgreSQL creates a schema called <code>public</code> and grants access on this schema to the <code>public</code> backend role. Mmm... too many things called <em>public</em> here, don't you think?</p>
+</li>
+<li>
+<p>Because of this default behavior, any user can connect to new databases and create objects in each database's <code>public</code> schema.</p>
+</li>
+</ol>
+<h3 id="createtheuser">Create the user</h3>
+<pre><code>CREATE USER myuser with password 'secret_passwd' role postgres;
 </code></pre>
-<p>This command will print the whole list of files which name matches precisely with «contents.html». Once we've ensured the output is ok, then we can delete them.</p>
-<pre><code>find -type f -name contents.html -exec rm -f {} \;
+<p>This statement will create a new user, and it'll add <code>postgres</code> role/user into <code>myuser</code> role. I know, syntax may look confusing.</p>
+<h3 id="createthedatabase">Create the database</h3>
+<pre><code>CREATE DATABASE mydatabase with owner myuser;
 </code></pre>
-<p>Another alternative to this command could be passing the output through a pipe, and then use xargs and rm.</p>
-<pre><code>find -type f -name contents.html | xargs rm -f
+<p>It creates a new database named <code>mydatabase</code> and makes <code>myuser</code> role the owner.</p>
+<h3 id="securizesthedatabase">Securizes the database</h3>
+<pre><code>\connect mydatabase
+REMOVE ALL ON DATABASE mydatabase FROM public;
+REVOKE ALL ON SCHEMA public FROM public;
 </code></pre>
-<p>Now you don't have excuses! Don't forget, parameter order matters. When in production systems, I always try not to be creative.</p>
-<p>So memorize the commands you usually use and write their parameters always the same order. Always. <mark>Being creative in production is not a good idea</mark>. Don't deal with the devil ;-)</p>
+<p>Revokes all privileges on the new database and on the <code>public</code> schema to the <code>public</code> role. I mean, this revokes public access to the database.</p>
+<h3 id="delegatesownershipofpublicschema">Delegates ownership of <code>public</code> schema</h3>
+<pre><code>ALTER SCHEMA public owner to myuser;
+</code></pre>
+<p>Now the user is the real owner.</p>
+<h3 id="thefinalpart">The final part</h3>
+<p>Execute this query if you want to revoke access to this database even to <code>postgres</code> user. It's up to you.</p>
+<p>REVOKE myuser FROM postgres;</p>
+<p>Remember. After this, even though <code>postgres</code> user, which is the user with more RDS privileges, won't have access to that database. It'll only be accessible for <code>myuser</code> user.</p>
+<p>In case you have to operate on it with <code>postgres</code> user, you'll need to grant access for it.</p>
+<p>GRANT myuser TO postgres;</p>
+<p>If not, you'll get a permission denied error.</p>
+<hr>If you find it, coffee is always appreciated. Thanks in advance!
+<h3 id="moreinfoat">More info at</h3>
+<p><a href="https://aws.amazon.com/de/blogs/database/managing-postgresql-users-and-roles/">Managing PostgreSQL users and roles</a><br>
+<a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.html#Appendix.PostgreSQL.CommonDBATasks.Access">Managing PostgreSQL Database Access</a><br>
+<a href="https://www.postgresql.org/docs/9.0/sql-grant.html">PostgreSQL GRANT Documentation</a><br>
+<a href="https://www.postgresql.org/docs/9.1/sql-revoke.html">PostgreSQL REVOKE Documentation</a></p>
 
 
             </section>

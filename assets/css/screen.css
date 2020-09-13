@@ -51,11 +51,13 @@ samp {
   font-size: 0.9em;
   padding: 2px 2px 2px 2px;
   border-radius: 2px;
+  color: var(--brand-color);
 }
 pre code,
 pre kbd,
 pre samp {
-    background-color: transparent;
+  color: var(--white-color);
+  background-color: transparent;
 }
 small {
   color: var(--secondary-text-color);

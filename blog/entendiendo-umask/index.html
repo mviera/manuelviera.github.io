@@ -42,16 +42,16 @@
     <meta property="og:title" content="Entendiendo umask">
     <meta property="og:description" content="Ahora mismo estoy preparándome para obtener la certificación  LPIC-1 y uno de los objetivos del tema que estoy estudiando es conocer y saber utilizar umask, pero me ha parecido que la documentación no es muy clara, al menos en el libro LPIC-1: Linux Professional Institute Certification: Guia de estudio: Examenes">
     <meta property="og:url" content="http://manuelviera.com/blog/entendiendo-umask/">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
     <meta property="article:published_time" content="2012-06-01T00:00:00.000Z">
-    <meta property="article:modified_time" content="2020-09-10T06:38:46.000Z">
+    <meta property="article:modified_time" content="2020-09-13T17:23:50.000Z">
     <meta property="article:tag" content="tech">
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Entendiendo umask">
     <meta name="twitter:description" content="Ahora mismo estoy preparándome para obtener la certificación  LPIC-1 y uno de los objetivos del tema que estoy estudiando es conocer y saber utilizar umask, pero me ha parecido que la documentación no es muy clara, al menos en el libro LPIC-1: Linux Professional Institute Certification: Guia de estudio: Examenes">
     <meta name="twitter:url" content="http://manuelviera.com/blog/entendiendo-umask/">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Manuel Viera">
     <meta name="twitter:label2" content="Filed under">
@@ -59,7 +59,7 @@
     <meta name="twitter:site" content="@mviera">
     <meta name="twitter:creator" content="@mviera">
     <meta property="og:image:width" content="2000">
-    <meta property="og:image:height" content="1500">
+    <meta property="og:image:height" content="1333">
     
     <script type="application/ld+json">
 {
@@ -94,12 +94,12 @@
     "headline": "Entendiendo umask",
     "url": "http://manuelviera.com/blog/entendiendo-umask/",
     "datePublished": "2012-06-01T00:00:00.000Z",
-    "dateModified": "2020-09-10T06:38:46.000Z",
+    "dateModified": "2020-09-13T17:23:50.000Z",
     "image": {
         "@type": "ImageObject",
-        "url": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "url": "https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
         "width": 2000,
-        "height": 1500
+        "height": 1333
     },
     "keywords": "tech",
     "description": "Ahora mismo estoy preparándome para obtener la certificación\nLPIC-1 [http://www.lpi.org/content/exam-101-objective-changes-july-2-2012] y uno\nde los objetivos del tema que estoy estudiando es conocer y saber utilizar umask\n, pero me ha parecido que la documentación no es muy clara, al menos en el libro \nLPIC-1: Linux Professional Institute Certification: Guia de estudio: Examenes\n101 y 102\n[http://www.amazon.com/LPIC-1-Professional-Institute-Certification-Examenes/dp/8441527830]\n, que es el que ",
@@ -270,10 +270,10 @@
     <h1 class="single-title">Entendiendo umask</h1>
   </header>
       <div class="single-media kg-width-wide u-placeholder horizontal">
-        <img class="lazyload u-object-fit" data-srcset="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 400w,
-https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 750w,
-https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 960w,
-https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 1140w" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Entendiendo umask">
+        <img class="lazyload u-object-fit" data-srcset="https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 400w,
+https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 750w,
+https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 960w,
+https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 1140w" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Entendiendo umask">
       </div>
   <div class="single-content u-text-format">
       <!--kg-card-begin: markdown--><p>Ahora mismo estoy preparándome para obtener la certificación<br>
@@ -397,7 +397,25 @@ resultado de 777 - 022.</p>
         <div class="kg-width-normal">
           <h3 class="related-title">You might also like...</h3>
           <div class="related-feed">
-              <article class="feed post no-image">
+              <article class="feed post featured">
+  <div class="feed-calendar">
+    <div class="feed-calendar-month">
+      Sep
+    </div>
+    <div class="feed-calendar-day">
+      13
+    </div>
+  </div>
+  <h2 class="feed-title">PostgreSQL and how to shield your databases well</h2>
+  <div class="feed-right">
+    <svg class="icon feed-visibility feed-visibility-public"><use xlink:href="#star"></use></svg>
+    <div class="feed-length">
+      2 min read
+    </div>
+  </div>
+  <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
+  <a class="u-permalink" href="../postgresql-and-how-to-shield-your-databases-well/"></a>
+</article>              <article class="feed post featured">
   <div class="feed-calendar">
     <div class="feed-calendar-month">
       Aug
@@ -410,12 +428,12 @@ resultado de 777 - 022.</p>
   <div class="feed-right">
     <svg class="icon feed-visibility feed-visibility-public"><use xlink:href="#star"></use></svg>
     <div class="feed-length">
-      1 min read
+      2 min read
     </div>
   </div>
   <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
   <a class="u-permalink" href="../find-and-the-importance-of-parameters-order/"></a>
-</article>              <article class="feed post featured">
+</article>              <article class="feed post">
   <div class="feed-calendar">
     <div class="feed-calendar-month">
       Aug
@@ -469,24 +487,6 @@ resultado de 777 - 022.</p>
   </div>
   <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
   <a class="u-permalink" href="../instalar-solr-en-jetty/"></a>
-</article>              <article class="feed post no-image">
-  <div class="feed-calendar">
-    <div class="feed-calendar-month">
-      Mar
-    </div>
-    <div class="feed-calendar-day">
-      02
-    </div>
-  </div>
-  <h2 class="feed-title">Empezando con MongoDB Part.II</h2>
-  <div class="feed-right">
-    <svg class="icon feed-visibility feed-visibility-public"><use xlink:href="#star"></use></svg>
-    <div class="feed-length">
-      10 min read
-    </div>
-  </div>
-  <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
-  <a class="u-permalink" href="../empezando-con-mongodb-part-ii/"></a>
 </article>          </div>
         </div>
       </div>

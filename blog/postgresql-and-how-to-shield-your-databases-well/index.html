@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Qué es un sparse file</title>
+  <title>PostgreSQL and how to shield your databases well</title>
   <link rel="stylesheet" href="../../assets/css/screen.css?v=e9ea648f70">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800">
 
@@ -39,23 +39,27 @@
     
     <meta property="og:site_name" content="Manuel Viera">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Qué es un sparse file">
-    <meta property="og:description" content="Hoy me he encontrado con el término sparse file y realmente no lo conocía, aunque puede que os pase como a mi, que después de que os diga qué es, muchos de vosotros ya sabíais de su existencia e incluso es muy probable que hayáis trabajado con este tipo de">
-    <meta property="og:url" content="http://manuelviera.com/blog/que-es-un-sparse-file/">
-    <meta property="article:published_time" content="2013-01-17T10:00:00.000Z">
-    <meta property="article:modified_time" content="2020-06-14T12:48:47.000Z">
+    <meta property="og:title" content="PostgreSQL and how to shield your databases well">
+    <meta property="og:description" content="Security matters, especially in databases. Let me show you how to secure your database in the right way.">
+    <meta property="og:url" content="http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
+    <meta property="article:published_time" content="2020-09-13T17:09:07.000Z">
+    <meta property="article:modified_time" content="2020-09-13T17:13:53.000Z">
     <meta property="article:tag" content="tech">
     
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Qué es un sparse file">
-    <meta name="twitter:description" content="Hoy me he encontrado con el término sparse file y realmente no lo conocía, aunque puede que os pase como a mi, que después de que os diga qué es, muchos de vosotros ya sabíais de su existencia e incluso es muy probable que hayáis trabajado con este tipo de">
-    <meta name="twitter:url" content="http://manuelviera.com/blog/que-es-un-sparse-file/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PostgreSQL and how to shield your databases well">
+    <meta name="twitter:description" content="Security matters, especially in databases. Let me show you how to secure your database in the right way.">
+    <meta name="twitter:url" content="http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Manuel Viera">
     <meta name="twitter:label2" content="Filed under">
     <meta name="twitter:data2" content="tech">
     <meta name="twitter:site" content="@mviera">
     <meta name="twitter:creator" content="@mviera">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="1333">
     
     <script type="application/ld+json">
 {
@@ -87,12 +91,18 @@
             "https://twitter.com/mviera"
         ]
     },
-    "headline": "Qué es un sparse file",
-    "url": "http://manuelviera.com/blog/que-es-un-sparse-file/",
-    "datePublished": "2013-01-17T10:00:00.000Z",
-    "dateModified": "2020-06-14T12:48:47.000Z",
+    "headline": "PostgreSQL and how to shield your databases well",
+    "url": "http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/",
+    "datePublished": "2020-09-13T17:09:07.000Z",
+    "dateModified": "2020-09-13T17:13:53.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "width": 2000,
+        "height": 1333
+    },
     "keywords": "tech",
-    "description": "Hoy me he encontrado con el término sparse file y realmente no lo conocía,\naunque puede que os pase como a mi, que después de que os diga qué es, muchos de\nvosotros ya sabíais de su existencia e incluso es muy probable que hayáis\ntrabajado con este tipo de ficheros. Pero...\n\n¿Qué es un sparse file?\nUn sparse file es un tipo de fichero el cual se crea con un tamaño específico\npero no se reserva dicho espacio en el sistema de ficheros inicialmente. Su\ntamaño irá creciendo a medida que vaya siendo ",
+    "description": "Security matters, especially in databases. Let me show you how to secure your database in the right way.",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://manuelviera.com/"
@@ -227,7 +237,7 @@
 </header>
 
     <header class="sticky kg-width-full">
-      <div class="sticky-title">Qué es un sparse file</div>
+      <div class="sticky-title">PostgreSQL and how to shield your databases well</div>
       <button class="button-icon sticky-toc-button">
         <svg class="icon"><use xlink:href="#table-of-contents"></use></svg>
         <div class="sticky-toc"></div>
@@ -240,16 +250,16 @@
         
 <div class="content-area">
   <main class="site-main">
-      <article class="single post tag-tech no-image kg-width-narrow">
+      <article class="single post tag-tech featured kg-width-narrow">
   <header class="single-header">
       <div class="single-meta">
         <span class="single-meta-item single-meta-date">
-          <time datetime="2013-01-17">
-            Jan 17, 2013
+          <time datetime="2020-09-13">
+            Sep 13, 2020
           </time>
         </span>
         <span class="single-meta-item single-meta-length">
-          5 min read
+          2 min read
         </span>
           <span class="single-meta-item single-meta-tag">
             <a class="post-tag post-tag-tech" href="../../tag/tech/">
@@ -257,170 +267,84 @@
             </a>
           </span>
       </div>
-    <h1 class="single-title">Qué es un sparse file</h1>
+    <h1 class="single-title">PostgreSQL and how to shield your databases well</h1>
+      <div class="single-excerpt">
+        Security matters, especially in databases. Let me show you how to secure your database in the right way.
+      </div>
   </header>
+      <div class="single-media kg-width-wide u-placeholder horizontal">
+        <img class="lazyload u-object-fit" data-srcset="https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 400w,
+https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 750w,
+https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 960w,
+https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 1140w" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PostgreSQL and how to shield your databases well">
+      </div>
   <div class="single-content u-text-format">
-      <!--kg-card-begin: markdown--><p>Hoy me he encontrado con el término <em>sparse file</em> y realmente no lo conocía, aunque puede que os pase como a mi, que después de que os diga qué es, muchos de vosotros ya sabíais de su existencia e incluso es muy probable que hayáis trabajado con este tipo de ficheros. Pero...</p>
-<h2 id="quesunsparsefile">¿Qué es un <em>sparse file</em>?</h2>
-<p>Un <em>sparse file</em> es un tipo de fichero el cual se crea con un tamaño específico pero no se reserva dicho espacio en el sistema de ficheros inicialmente. Su tamaño irá creciendo a medida que vaya siendo necesario. Por ejemplo, podríamos crear un fichero cuyo tamaño máximo sea 2G pero que inicialmente en nuestro sistema de ficheros ocupe 0 bytes.</p>
-<p>Es muy probable que ya es sea más familiar este tipo de ficheros, sobre todo aquellos que hayáis trabajado con virtualización, por ejemplo con KVM<br>
-utilizando virt-manager, cuando al crear un volumen de almacenamiento para una máquina virtual ofrece la opción de alojar la totalidad del volumen en el pool de almacenamiento, o que el tamaño del volumen vaya creciendo dinámicamente.</p>
-<p>Para temas de virtualización <strong>no</strong> es aconsejable utilizar este tipo de<br>
-ficheros porque pueden generar problemas de rendimiento e integridad de los<br>
-datos. De todas formas, son bastante útiles para realizar pruebas.</p>
-<h2 id="quventajasmeaporta">¿Qué ventajas me aporta?</h2>
-<p>Como ventajas puntualizaría la rapidez con la que son creados, que como he<br>
-comentado anteriormente, para realizar pruebas son perfectos, ya que<br>
-inicialmente "no ocupan" espacio en el sistema.</p>
-<p>Además utilizar un <em>sparse file</em> nos permitirá crear un fichero de gran tamaño aunque en ese momento no dispongamos de tal espacio en nuestro sistema de ficheros.</p>
-<h2 id="peronoesorotodoloquereluce">Pero no es oro todo lo que reluce...</h2>
-<p>Este tipo de fichero es soportado en la mayoría de los sistemas de ficheros<br>
-modernos en Unix, incluso en NTFS; pero al parecer no es posible, y lo he<br>
-comprobado, en HFS+ de Apple.</p>
-<p>A parte de los problemas de rendimiento e integridad con los datos comentados anteriormente, es posible que obtengamos resultados inesperados cuando tratemos de copiar este tipo de ficheros, pues si la utilidad que hemos usado para copiarlo no soporta este tipo de ficheros, será copiado con el tamaño completo.</p>
-<p>Afortunadamente <em>cp</em>, por defecto, y <em>rsync</em> con la opción <strong>-S</strong> /<br>
-<strong>--sparse</strong>, soportan este tipo de ficheros.</p>
-<h2 id="ycmocreounsparsefile">¿Y cómo creo un <em>sparse file</em>?</h2>
-<p>La creación de un <em>sparse file</em> es muy sencillo, es posible hacerlo con el<br>
-comando <em>dd</em> que muchos ya conoceréis al haber creado ficheros llenos de ceros de la siguiente forma:</p>
-<pre><code>$ dd if=/dev/zero of=file.img bs=1M count=1G
+      <!--kg-card-begin: markdown--><p>The recipe:</p>
+<pre><code>CREATE USER myuser with password 'secret_passwd' role postgres;
+CREATE DATABASE mydatabase with owner myuser;
+\connect mydatabase
+REMOVE ALL ON DATABASE mydatabase FROM public;
+REVOKE ALL ON SCHEMA public FROM public;    
+ALTER SCHEMA public owner to myuser;
+REVOKE myuser FROM postgres;
 </code></pre>
-<p>Esta instrucción creará un fichero lleno de ceros ocupando 1G de espacio en<br>
-vuestro sistema de ficheros.</p>
-<p>Pero para crear un <em>sparse file</em> será necesario ejecutar la siguiente<br>
-instrucción, similar a la anterior:</p>
-<pre><code>$ dd if=/dev/zero of=file.img bs=1M count=0 seek=1024
-0+0 registros leídos
-0+0 registros escritos
-0 bytes (0 B) copiados, 1,802e-05 s, 0,0 kB/s
-</code></pre>
-<p>El truco se encuentra en el operador <strong>seek</strong>. En este caso tendremos un<br>
-fichero que inicialmente ocupa 0 bytes pero con un tamaño de 1G en potencia.</p>
-<pre><code>$ du -hs file.img 
-0   file.img
-</code></pre>
-<p>Sin embargo, podemos ver su tamaño real con la opción <strong>--apparent-size</strong> de la siguiente forma:</p>
-<pre><code>$ du -h --apparent-size file.img
-1,0G    file.img
-</code></pre>
-<h2 id="perocmocomprueboquesutamaocrecedinmicamente">¿Pero cómo compruebo que su tamaño crece dinámicamente?</h2>
-<p>Es muy sencillo, crearemos ficheros dentro de este y veremos cómo aumenta de tamaño dinámicamente hasta un total de 1G. Para ello seguiremos los siguiente pasos:</p>
+<hr>
+<h2 id="thedeepdive">The deep dive</h2>
+<h3 id="firstthingsfirst">First things first</h3>
+<p>There are a few things you need to know to understand a bit about how PostgreSQL works.</p>
 <ol>
 <li>
-<p>Crearemos un sistema de ficheros en <em>file.img</em>, lo cual nos va a permitir alojar ficheros dentro de él convirtiéndolo en un volumen de almacenamiento:</p>
-<pre><code>   $ mkfs.ext4 -q file.img  
-   file.img no es un dispositivo especial de bloques.
-   ¿Continuar de todas formas? (s,n) s
+<p><code>CREATE USER</code> and <code>CREATE GROUP</code> are aliases for the <code>CREATE ROLE</code> statement. An user is just a role with <code>LOGIN</code> privileges.</p>
+<pre><code> CREATE USER = CREATE ROLE + LOGIN privilege
 </code></pre>
 </li>
 <li>
-<p>Montamos el fichero como si de un dispositivo de almacenamiento se<br>
-tratase, utilizando el comando <em>mount</em>, de la siguiente forma:</p>
-<pre><code>   $ mkdir mnt
-   $ sudo mount -t auto file.img mnt
-</code></pre>
+<p>PostgreSQL has a <code>public</code> backend role, and every new user and role inherits permissions from it.</p>
 </li>
-</ol>
-<p>Si listamos los puntos de montaje actuales en nuestro sistema, deberíamos ver el fichero <em>file.img</em> montado en el directorio local <em>mnt</em>:</p>
-<pre><code>    $ mount |grep file.img
-    /tmp/file.img on /tmp/mnt type ext4 (rw)
-</code></pre>
-<ol start="3">
 <li>
-<p>Creamos varios ficheros temporales dentro del punto de montaje:</p>
-<pre><code>   $ for i in {1..10};do mktemp --tmpdir=mnt; done
-</code></pre>
+<p>When a new database is created, PostgreSQL creates a schema called <code>public</code> and grants access on this schema to the <code>public</code> backend role. Mmm... too many things called <em>public</em> here, don't you think?</p>
 </li>
-</ol>
-<p><strong>Nota:</strong> aprovecho para enseñar el comando <em>mktemp</em> crea un fichero temporal del tipo <em>tmp.XXXXXXXX</em> en el directorio actual. Con la opción <em>--tmpdir</em> es posible indicar el directorio destino donde se creará el fichero temporal.</p>
-<ol start="4">
 <li>
-<p>Comprobamos que el tamaño del fichero ha crecido con respecto al estado anterior:</p>
-<pre><code>   $ du -h file.img 
-   49M    file.img
-</code></pre>
+<p>Because of this default behavior, any user can connect to new databases and create objects in each database's <code>public</code> schema.</p>
 </li>
 </ol>
-<p>Y obviamente el tamaño total sigue siendo 1G:</p>
-<pre><code>    $ du -h --apparent-size file.img 
-    1,0G    file.img
+<h3 id="createtheuser">Create the user</h3>
+<pre><code>CREATE USER myuser with password 'secret_passwd' role postgres;
 </code></pre>
-<h2 id="dndeestellmite">Dónde está el límite</h2>
-<p>Lo único que nos falta comprobar es dónde está el limite. En el ejemplo<br>
-utilizado es 1G, así que intentaremos crear un fichero de un tamaño mayor que el total del <em>sparse file</em>.</p>
-<p>Teniendo montado el fichero en el directorio <em>mnt</em>, crearemos un fichero de 2G dentro de este, ejecutando lo siguiente:</p>
-<pre><code>$ dd if=/dev/zero of=file bs=1M count=2048
-dd: escribiendo «file»: No queda espacio en el dispositivo
-924+0 registros leídos
-923+0 registros escritos
-968290304 bytes (968 MB) copiados, 4,71871 s, 205 MB/s
+<p>This statement will create a new user, and it'll add <code>postgres</code> role/user into <code>myuser</code> role. I know, syntax may look confusing.</p>
+<h3 id="createthedatabase">Create the database</h3>
+<pre><code>CREATE DATABASE mydatabase with owner myuser;
 </code></pre>
-<p>Como podemos observar, nos ha avisado de que no queda espacio libre en el<br>
-dispositivo y si comprobamos el tamaño actual del fichero obtendremos lo<br>
-siguiente:</p>
-<pre><code>$ du -h file.img 
-973M    file.img
+<p>It creates a new database named <code>mydatabase</code> and makes <code>myuser</code> role the owner.</p>
+<h3 id="securizesthedatabase">Securizes the database</h3>
+<pre><code>\connect mydatabase
+REMOVE ALL ON DATABASE mydatabase FROM public;
+REVOKE ALL ON SCHEMA public FROM public;
 </code></pre>
-<p><strong>Nota:</strong> Hay un resto de espacio de 27M que es posible que sea debido a la<br>
-reserva del 5% de espacio para el usuario root. Siempre hay una reserva de<br>
-espacio para el usuario root, por defecto del 5%, de forma que este pueda<br>
-acceder al dispositivo cuando haya alcanzado su límite de espacio. Si<br>
-eliminamos dicha reserva, <strong>para nada recomendable en producción</strong> pero en este caso estamos probando en un fichero local, podremos comprobar que si volvemos a crear el fichero de 2G dentro del <em>sparse file</em>, el espacio llega a ocuparse completamente:</p>
-<pre><code>$ tune2fs -m 0 file.img 
-tune2fs 1.41.14 (22-Dec-2010)
-Setting reserved blocks percentage to 0% (0 blocks)
-
-$ dd if=/dev/zero of=file bs=1M count=2048
-dd: escribiendo «file»: No queda espacio en el dispositivo
-965+0 registros leídos
-964+0 registros escritos
-1011208192 bytes (1,0 GB) copiados, 3,27181 s, 309 MB/s
-
-$ du -h file.img  
-1,0G    file.img
+<p>Revokes all privileges on the new database and on the <code>public</code> schema to the <code>public</code> role. I mean, this revokes public access to the database.</p>
+<h3 id="delegatesownershipofpublicschema">Delegates ownership of <code>public</code> schema</h3>
+<pre><code>ALTER SCHEMA public owner to myuser;
 </code></pre>
-<h2 id="actualizacinysiqueremosaumentarellmite">Actualización: ¿Y si queremos aumentar el límite?</h2>
-<p>Ayer se me debió pasar esta cuestión mientras me centraba en escribir, pero sí, es posible aumentar el tamaño del <em>sparse file</em>, ¿pero cómo?</p>
-<p>Pues muy sencillo, solo tenemos que volver a utilizar el comando <em>dd</em> indicando un tamaño mayor en el parámetro <em>seek</em>, como indico a continuación:</p>
-<pre><code>$ dd if=/dev/zero of=file.img bs=1M count=0 seek=2048
-0+0 registros leídos
-0+0 registros escritos
-0 bytes (0 B) copiados, 1,6064e-05 s, 0,0 kB/s
-</code></pre>
-<p>Si comprobamos ahora el tamaño del fichero, podremos observar que su tamaño<br>
-total a aumentado en 1G:</p>
-<pre><code>$ du -h --apparent-size file.img 
-2,0G    file.img
-</code></pre>
-<p>Pero aun no hemos terminado, sólo nos falta <strong>redimensionar</strong> el sistema de<br>
-ficheros incluido en él, y esto lo haremos haciendo uso del comando <em>resize2fs</em>, pero primero realizaremos un chequeo del sistema de ficheros:</p>
-<pre><code>e2fsck -f file.img 
-e2fsck 1.41.14 (22-Dec-2010)
-Paso 1: Verificando nodos-i, bloques y tamaños
-Paso 2: Verificando la estructura de directorios
-Paso 3: Revisando la conectividad de directorios
-Paso 4: Revisando las cuentas de referencia
-Paso 5: Revisando el resumen de información de grupos
-file.img: 22/65536 ficheros (0.0% no contiguos), 259513/262144 bloques
-
-$ resize2fs file.img 
-resize2fs 1.41.14 (22-Dec-2010)
-Resizing the filesystem on file.img to 524288 (4k) blocks.
-El sistema de ficheros en file.img tiene ahora 524288 bloques.
-</code></pre>
-<p>Por último, si comprobamos el total de espacio disponible dentro del <em>sparse file</em> podremos observar que a aumentado a 2G:</p>
-<pre><code>$ df -h mnt 
-S.ficheros     Tamaño Usado  Disp Uso% Montado en
-/dev/loop0       2,0G  998M  998M  51% /tmp/mnt
-</code></pre>
-<p>Espero que os haya parecido interesante! No dudéis en comentar!</p>
-<p>Un saludo, Manu.</p>
+<p>Now the user is the real owner.</p>
+<h3 id="thefinalpart">The final part</h3>
+<p>Execute this query if you want to revoke access to this database even to <code>postgres</code> user. It's up to you.</p>
+<p>REVOKE myuser FROM postgres;</p>
+<p>Remember. After this, even though <code>postgres</code> user, which is the user with more RDS privileges, won't have access to that database. It'll only be accessible for <code>myuser</code> user.</p>
+<p>In case you have to operate on it with <code>postgres</code> user, you'll need to grant access for it.</p>
+<p>GRANT myuser TO postgres;</p>
+<p>If not, you'll get a permission denied error.</p>
+<!--kg-card-end: markdown--><hr><!--kg-card-begin: html-->If you find it, coffee is always appreciated. Thanks in advance!
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="mviera" data-color="#FFDD00" data-emoji="" data-font="Arial" data-text="Buy me a coffee" data-outline-color="#000" data-font-color="#000" data-coffee-color="#fff"></script><!--kg-card-end: html--><!--kg-card-begin: markdown--><h3 id="moreinfoat">More info at</h3>
+<p><a href="https://aws.amazon.com/de/blogs/database/managing-postgresql-users-and-roles/">Managing PostgreSQL users and roles</a><br>
+<a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.html#Appendix.PostgreSQL.CommonDBATasks.Access">Managing PostgreSQL Database Access</a><br>
+<a href="https://www.postgresql.org/docs/9.0/sql-grant.html">PostgreSQL GRANT Documentation</a><br>
+<a href="https://www.postgresql.org/docs/9.1/sql-revoke.html">PostgreSQL REVOKE Documentation</a></p>
 <!--kg-card-end: markdown-->
   </div>
     <footer class="single-footer kg-width-normal">
       <div class="single-footer-left">
           <div class="navigation navigation-previous">
-            <a class="navigation-link" href="../nginx-como-proxy-http/">
+            <a class="navigation-link" href="../media-consumption-in-august-2020/">
               <svg class="icon navigation-icon"><use xlink:href="#arrow-left"></use></svg>
             </a>
           </div>
@@ -438,11 +362,11 @@ S.ficheros     Tamaño Usado  Disp Uso% Montado en
         </div>
         <div class="single-footer-bottom">
           <div class="share">
-            <a class="share-link share-link-facebook" href="https://www.facebook.com/sharer.php?u=http://manuelviera.com/blog/que-es-un-sparse-file/" target="_blank" rel="noopener noreferrer">
+            <a class="share-link share-link-facebook" href="https://www.facebook.com/sharer.php?u=http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/" target="_blank" rel="noopener noreferrer">
               <svg class="icon icon-facebook"><use xlink:href="#facebook"></use></svg>
               Share
             </a>
-            <a class="share-link share-link-twitter" href="https://twitter.com/intent/tweet?url=http://manuelviera.com/blog/que-es-un-sparse-file/&amp;text=Qu%C3%A9%20es%20un%20sparse%20file" target="_blank" rel="noopener noreferrer">
+            <a class="share-link share-link-twitter" href="https://twitter.com/intent/tweet?url=http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/&amp;text=PostgreSQL%20and%20how%20to%20shield%20your%20databases%20well" target="_blank" rel="noopener noreferrer">
               <svg class="icon icon-twitter"><use xlink:href="#twitter"></use></svg>
               Tweet
             </a>
@@ -450,11 +374,6 @@ S.ficheros     Tamaño Usado  Disp Uso% Montado en
         </div>
       </div>
       <div class="single-footer-right">
-          <div class="navigation navigation-next">
-            <a class="navigation-link" href="../empezando-con-mongodb/">
-              <svg class="icon navigation-icon"><use xlink:href="#arrow-right"></use></svg>
-            </a>
-          </div>
       </div>
     </footer>
 </article>          <section class="related-wrapper kg-width-full">
@@ -463,24 +382,6 @@ S.ficheros     Tamaño Usado  Disp Uso% Montado en
           <h3 class="related-title">You might also like...</h3>
           <div class="related-feed">
               <article class="feed post featured">
-  <div class="feed-calendar">
-    <div class="feed-calendar-month">
-      Sep
-    </div>
-    <div class="feed-calendar-day">
-      13
-    </div>
-  </div>
-  <h2 class="feed-title">PostgreSQL and how to shield your databases well</h2>
-  <div class="feed-right">
-    <svg class="icon feed-visibility feed-visibility-public"><use xlink:href="#star"></use></svg>
-    <div class="feed-length">
-      2 min read
-    </div>
-  </div>
-  <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
-  <a class="u-permalink" href="../postgresql-and-how-to-shield-your-databases-well/"></a>
-</article>              <article class="feed post featured">
   <div class="feed-calendar">
     <div class="feed-calendar-month">
       Aug
@@ -552,6 +453,24 @@ S.ficheros     Tamaño Usado  Disp Uso% Montado en
   </div>
   <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
   <a class="u-permalink" href="../instalar-solr-en-jetty/"></a>
+</article>              <article class="feed post no-image">
+  <div class="feed-calendar">
+    <div class="feed-calendar-month">
+      Mar
+    </div>
+    <div class="feed-calendar-day">
+      02
+    </div>
+  </div>
+  <h2 class="feed-title">Empezando con MongoDB Part.II</h2>
+  <div class="feed-right">
+    <svg class="icon feed-visibility feed-visibility-public"><use xlink:href="#star"></use></svg>
+    <div class="feed-length">
+      10 min read
+    </div>
+  </div>
+  <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
+  <a class="u-permalink" href="../empezando-con-mongodb-part-ii/"></a>
 </article>          </div>
         </div>
       </div>
@@ -569,8 +488,8 @@ S.ficheros     Tamaño Usado  Disp Uso% Montado en
   }
   
   var disqus_config = function () {
-    this.page.url = 'http://manuelviera.com/blog/que-es-un-sparse-file/';
-    this.page.identifier = 'ghost-5ee61b9846e19912dcb415b5';
+    this.page.url = 'http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/';
+    this.page.identifier = 'ghost-5f5e101619f8b01255400608';
   };
 
   function loadDisqus() {

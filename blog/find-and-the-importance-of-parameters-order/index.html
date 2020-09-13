@@ -42,20 +42,24 @@
     <meta property="og:title" content="Find and the importance of parameters order">
     <meta property="og:description" content="Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it.">
     <meta property="og:url" content="http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
     <meta property="article:published_time" content="2020-08-10T14:53:00.000Z">
-    <meta property="article:modified_time" content="2020-09-06T16:15:10.000Z">
+    <meta property="article:modified_time" content="2020-09-13T17:21:17.000Z">
     <meta property="article:tag" content="tech">
     
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Find and the importance of parameters order">
     <meta name="twitter:description" content="Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it.">
     <meta name="twitter:url" content="http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Manuel Viera">
     <meta name="twitter:label2" content="Filed under">
     <meta name="twitter:data2" content="tech">
     <meta name="twitter:site" content="@mviera">
     <meta name="twitter:creator" content="@mviera">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="1333">
     
     <script type="application/ld+json">
 {
@@ -90,7 +94,13 @@
     "headline": "Find and the importance of parameters order",
     "url": "http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/",
     "datePublished": "2020-08-10T14:53:00.000Z",
-    "dateModified": "2020-09-06T16:15:10.000Z",
+    "dateModified": "2020-09-13T17:21:17.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "width": 2000,
+        "height": 1333
+    },
     "keywords": "tech",
     "description": "Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it.",
     "mainEntityOfPage": {
@@ -240,7 +250,7 @@
         
 <div class="content-area">
   <main class="site-main">
-      <article class="single post tag-tech no-image kg-width-narrow">
+      <article class="single post tag-tech featured kg-width-narrow">
   <header class="single-header">
       <div class="single-meta">
         <span class="single-meta-item single-meta-date">
@@ -249,7 +259,7 @@
           </time>
         </span>
         <span class="single-meta-item single-meta-length">
-          1 min read
+          2 min read
         </span>
           <span class="single-meta-item single-meta-tag">
             <a class="post-tag post-tag-tech" href="../../tag/tech/">
@@ -262,6 +272,12 @@
         Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it.
       </div>
   </header>
+      <div class="single-media kg-width-wide u-placeholder horizontal">
+        <img class="lazyload u-object-fit" data-srcset="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 400w,
+https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 750w,
+https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 960w,
+https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 1140w" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Find and the importance of parameters order">
+      </div>
   <div class="single-content u-text-format">
       <!--kg-card-begin: markdown--><p>Someone texted me with this tweet a few weeks ago. It made me remember how important the order of the parameters in some commands could be. Let's see the tweet.</p>
 <!--kg-card-end: markdown--><figure class="kg-card kg-embed-card"><blockquote class="twitter-tweet" data-width="550"><p lang="en" dir="ltr">I wanted to delete every file called "contents.html" so I ran:<br><br>find -type f -delete -name contents.html<br><br>It worked! But it also deleted every other file.<br><br>find's args are ordered. "delete" works on every match before it, ignoring anything after. "name" should have gone first.</p>— Tomas Sedovic (@TomasSedovic) <a href="https://twitter.com/TomasSedovic/status/1226462687170875398?ref_src=twsrc%5Etfw">February 9, 2020</a></blockquote>
@@ -337,6 +353,24 @@
               <article class="feed post featured">
   <div class="feed-calendar">
     <div class="feed-calendar-month">
+      Sep
+    </div>
+    <div class="feed-calendar-day">
+      13
+    </div>
+  </div>
+  <h2 class="feed-title">PostgreSQL and how to shield your databases well</h2>
+  <div class="feed-right">
+    <svg class="icon feed-visibility feed-visibility-public"><use xlink:href="#star"></use></svg>
+    <div class="feed-length">
+      2 min read
+    </div>
+  </div>
+  <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
+  <a class="u-permalink" href="../postgresql-and-how-to-shield-your-databases-well/"></a>
+</article>              <article class="feed post">
+  <div class="feed-calendar">
+    <div class="feed-calendar-month">
       Aug
     </div>
     <div class="feed-calendar-day">
@@ -406,24 +440,6 @@
   </div>
   <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
   <a class="u-permalink" href="../empezando-con-mongodb-part-ii/"></a>
-</article>              <article class="feed post no-image">
-  <div class="feed-calendar">
-    <div class="feed-calendar-month">
-      Feb
-    </div>
-    <div class="feed-calendar-day">
-      06
-    </div>
-  </div>
-  <h2 class="feed-title">Empezando con MongoDB</h2>
-  <div class="feed-right">
-    <svg class="icon feed-visibility feed-visibility-public"><use xlink:href="#star"></use></svg>
-    <div class="feed-length">
-      12 min read
-    </div>
-  </div>
-  <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
-  <a class="u-permalink" href="../empezando-con-mongodb/"></a>
 </article>          </div>
         </div>
       </div>

@@ -1,4 +1,64 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Manuel Viera</title><description>I'm Manu and this is my personal lifelog. Here you'll find some tech posts, self-tracking metrics and other random thoughts.</description><link>http://manuelviera.com/</link><image><url>http://manuelviera.com/favicon.png</url><title>Manuel Viera</title><link>http://manuelviera.com/</link></image><generator>Ghost 3.19</generator><lastBuildDate>Thu, 10 Sep 2020 12:04:46 GMT</lastBuildDate><atom:link href="http://manuelviera.com/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Media consumption in August 2020</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;ul&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Manuel Viera</title><description>I'm Manu and this is my personal lifelog. Here you'll find some tech posts, self-tracking metrics and other random thoughts.</description><link>http://manuelviera.com/</link><image><url>http://manuelviera.com/favicon.png</url><title>Manuel Viera</title><link>http://manuelviera.com/</link></image><generator>Ghost 3.19</generator><lastBuildDate>Sun, 13 Sep 2020 17:24:33 GMT</lastBuildDate><atom:link href="http://manuelviera.com/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>PostgreSQL and how to shield your databases well</title><description>Security matters, especially in databases. Let me show you how to secure your database in the right way.</description><link>http://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/</link><guid isPermaLink="false">5f5e101619f8b01255400608</guid><category>tech</category><dc:creator>Manuel Viera</dc:creator><pubDate>Sun, 13 Sep 2020 17:09:07 GMT</pubDate><media:content url="https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" medium="image"/><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;img src="https://images.unsplash.com/photo-1515974256630-babc85765b1d?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" alt="PostgreSQL and how to shield your databases well"&gt;&lt;p&gt;The recipe:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;CREATE USER myuser with password 'secret_passwd' role postgres;
+CREATE DATABASE mydatabase with owner myuser;
+\connect mydatabase
+REMOVE ALL ON DATABASE mydatabase FROM public;
+REVOKE ALL ON SCHEMA public FROM public;    
+ALTER SCHEMA public owner to myuser;
+REVOKE myuser FROM postgres;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id="thedeepdive"&gt;The deep dive&lt;/h2&gt;
+&lt;h3 id="firstthingsfirst"&gt;First things first&lt;/h3&gt;
+&lt;p&gt;There are a few things you need to know to understand a bit about how PostgreSQL works.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;CREATE USER&lt;/code&gt; and &lt;code&gt;CREATE GROUP&lt;/code&gt; are aliases for the &lt;code&gt;CREATE ROLE&lt;/code&gt; statement. An user is just a role with &lt;code&gt;LOGIN&lt;/code&gt; privileges.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; CREATE USER = CREATE ROLE + LOGIN privilege
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PostgreSQL has a &lt;code&gt;public&lt;/code&gt; backend role, and every new user and role inherits permissions from it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When a new database is created, PostgreSQL creates a schema called &lt;code&gt;public&lt;/code&gt; and grants access on this schema to the &lt;code&gt;public&lt;/code&gt; backend role. Mmm... too many things called &lt;em&gt;public&lt;/em&gt; here, don't you think?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Because of this default behavior, any user can connect to new databases and create objects in each database's &lt;code&gt;public&lt;/code&gt; schema.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="createtheuser"&gt;Create the user&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;CREATE USER myuser with password 'secret_passwd' role postgres;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This statement will create a new user, and it'll add &lt;code&gt;postgres&lt;/code&gt; role/user into &lt;code&gt;myuser&lt;/code&gt; role. I know, syntax may look confusing.&lt;/p&gt;
+&lt;h3 id="createthedatabase"&gt;Create the database&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;CREATE DATABASE mydatabase with owner myuser;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It creates a new database named &lt;code&gt;mydatabase&lt;/code&gt; and makes &lt;code&gt;myuser&lt;/code&gt; role the owner.&lt;/p&gt;
+&lt;h3 id="securizesthedatabase"&gt;Securizes the database&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;\connect mydatabase
+REMOVE ALL ON DATABASE mydatabase FROM public;
+REVOKE ALL ON SCHEMA public FROM public;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Revokes all privileges on the new database and on the &lt;code&gt;public&lt;/code&gt; schema to the &lt;code&gt;public&lt;/code&gt; role. I mean, this revokes public access to the database.&lt;/p&gt;
+&lt;h3 id="delegatesownershipofpublicschema"&gt;Delegates ownership of &lt;code&gt;public&lt;/code&gt; schema&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;ALTER SCHEMA public owner to myuser;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now the user is the real owner.&lt;/p&gt;
+&lt;h3 id="thefinalpart"&gt;The final part&lt;/h3&gt;
+&lt;p&gt;Execute this query if you want to revoke access to this database even to &lt;code&gt;postgres&lt;/code&gt; user. It's up to you.&lt;/p&gt;
+&lt;p&gt;REVOKE myuser FROM postgres;&lt;/p&gt;
+&lt;p&gt;Remember. After this, even though &lt;code&gt;postgres&lt;/code&gt; user, which is the user with more RDS privileges, won't have access to that database. It'll only be accessible for &lt;code&gt;myuser&lt;/code&gt; user.&lt;/p&gt;
+&lt;p&gt;In case you have to operate on it with &lt;code&gt;postgres&lt;/code&gt; user, you'll need to grant access for it.&lt;/p&gt;
+&lt;p&gt;GRANT myuser TO postgres;&lt;/p&gt;
+&lt;p&gt;If not, you'll get a permission denied error.&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;&lt;hr&gt;&lt;!--kg-card-begin: html--&gt;If you find it, coffee is always appreciated. Thanks in advance!
+&lt;script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="mviera" data-color="#FFDD00" data-emoji data-font="Arial" data-text="Buy me a coffee" data-outline-color="#000" data-font-color="#000" data-coffee-color="#fff"&gt;&lt;/script&gt;&lt;!--kg-card-end: html--&gt;&lt;!--kg-card-begin: markdown--&gt;&lt;h3 id="moreinfoat"&gt;More info at&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://aws.amazon.com/de/blogs/database/managing-postgresql-users-and-roles/"&gt;Managing PostgreSQL users and roles&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.html#Appendix.PostgreSQL.CommonDBATasks.Access"&gt;Managing PostgreSQL Database Access&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://www.postgresql.org/docs/9.0/sql-grant.html"&gt;PostgreSQL GRANT Documentation&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://www.postgresql.org/docs/9.1/sql-revoke.html"&gt;PostgreSQL REVOKE Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Media consumption in August 2020</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;ul&gt;
 &lt;li&gt;Read 3 books &lt;output&gt;(14h 36 min)&lt;/output&gt; and 6 articles.&lt;/li&gt;
 &lt;li&gt;Watched 3 movies &lt;output&gt;(9h 35 min)&lt;/output&gt;, 1 TV episodes &lt;output&gt;(51 min)&lt;/output&gt; and 1 talk &lt;output&gt;(19 min)&lt;/output&gt;.&lt;/li&gt;
 &lt;li&gt;Listened to 0 podcasts episodes &lt;output&gt;(0 min)&lt;/output&gt;.&lt;/li&gt;
@@ -28,7 +88,7 @@
 &lt;p&gt;&lt;a href="https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt"&gt;Back To The Future: Unix Wildcards Gone Wild&lt;/a&gt; &lt;output&gt;(Leon Juranic)&lt;/output&gt;&lt;/p&gt;
 &lt;h4 id="talk"&gt;Talk&lt;/h4&gt;
 &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=Rai3pwH3XrU"&gt;Guillaume Néry: The exhilarating peace of freediving&lt;/a&gt; &lt;output&gt;(TED)&lt;/output&gt;&lt;/p&gt;
-&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Find and the importance of parameters order</title><description>Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it.</description><link>http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/</link><guid isPermaLink="false">5f54f68bd6502f239e9073e6</guid><category>tech</category><dc:creator>Manuel Viera</dc:creator><pubDate>Mon, 10 Aug 2020 14:53:00 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;Someone texted me with this tweet a few weeks ago. It made me remember how important the order of the parameters in some commands could be. Let's see the tweet.&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Find and the importance of parameters order</title><description>Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it.</description><link>http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/</link><guid isPermaLink="false">5f54f68bd6502f239e9073e6</guid><category>tech</category><dc:creator>Manuel Viera</dc:creator><pubDate>Mon, 10 Aug 2020 14:53:00 GMT</pubDate><media:content url="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" medium="image"/><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;img src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" alt="Find and the importance of parameters order"&gt;&lt;p&gt;Someone texted me with this tweet a few weeks ago. It made me remember how important the order of the parameters in some commands could be. Let's see the tweet.&lt;/p&gt;
 &lt;!--kg-card-end: markdown--&gt;&lt;figure class="kg-card kg-embed-card"&gt;&lt;blockquote class="twitter-tweet" data-width="550"&gt;&lt;p lang="en" dir="ltr"&gt;I wanted to delete every file called &amp;quot;contents.html&amp;quot; so I ran:&lt;br&gt;&lt;br&gt;find -type f -delete -name contents.html&lt;br&gt;&lt;br&gt;It worked! But it also deleted every other file.&lt;br&gt;&lt;br&gt;find&amp;#39;s args are ordered. &amp;quot;delete&amp;quot; works on every match before it, ignoring anything after. &amp;quot;name&amp;quot; should have gone first.&lt;/p&gt;&amp;mdash; Tomas Sedovic (@TomasSedovic) &lt;a href="https://twitter.com/TomasSedovic/status/1226462687170875398?ref_src=twsrc%5Etfw"&gt;February 9, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
 &lt;/figure&gt;&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;As you may have noticed, some commands, such as find, take its parameters in order. So, this command:&lt;/p&gt;
@@ -1356,155 +1416,4 @@ S.ficheros     Tamaño Usado  Disp Uso% Montado en
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Espero que os haya parecido interesante! No dudéis en comentar!&lt;/p&gt;
 &lt;p&gt;Un saludo, Manu.&lt;/p&gt;
-&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Nginx como proxy HTTP</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;De regalo de Reyes os traigo un post bastante sencillo sobre Nginx. Se trata de configurar Nginx para que funcione como un proxy HTTP, pero antes de nada...&lt;/p&gt;
-&lt;h2 id="quesunproxy"&gt;¿Qué es un proxy?&lt;/h2&gt;
-&lt;p&gt;Un proxy no es más que un &lt;strong&gt;intermediario&lt;/strong&gt;, que es el significado que tiene la palabra &lt;em&gt;proxy&lt;/em&gt; en&lt;/p&gt;</description><link>http://manuelviera.com/blog/nginx-como-proxy-http/</link><guid isPermaLink="false">5ee6188546e19912dcb4157f</guid><category>tech</category><dc:creator>Manuel Viera</dc:creator><pubDate>Sun, 06 Jan 2013 00:00:00 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;De regalo de Reyes os traigo un post bastante sencillo sobre Nginx. Se trata de configurar Nginx para que funcione como un proxy HTTP, pero antes de nada...&lt;/p&gt;
-&lt;h2 id="quesunproxy"&gt;¿Qué es un proxy?&lt;/h2&gt;
-&lt;p&gt;Un proxy no es más que un &lt;strong&gt;intermediario&lt;/strong&gt;, que es el significado que tiene la palabra &lt;em&gt;proxy&lt;/em&gt; en inglés, en la comunicación que se realiza entre dos puntos. Por ejemplo, entre un cliente, que puede ser un navegador web, petición Ajax, etc; y un servidor.  Hay muchos tipos o aplicaciones distintas para un proxy como pueden ser proxy inverso (reverse proxy), proxy transparente, proxy cache; y todas ellas se pueden combinar en una misma configuración.&lt;/p&gt;
-&lt;p&gt;Por ejemplo, podríamos configurar un proxy HTTP inverso con cache para acelerar el tiempo de respuesta de éste a medida que se va utilizando. En este caso vamos a configurar un proxy HTTP inverso, pero...&lt;/p&gt;
-&lt;h2 id="quenosofreceunproxyhttpinverso"&gt;¿Que nos ofrece un proxy HTTP inverso?&lt;/h2&gt;
-&lt;p&gt;Antes de nada, nuestro proxy, como su propio nombre indica, va a estar&lt;br&gt;
-orientado al servicio HTTP o HTTPS (HTTP Secure), es decir, sólo va a trabajar con peticiones HTTP. Aunque Nginx como tal, también podría actuar como IMAP Proxy, un proxy para el protocolo IMAP (Internet Message Access Protocol) de correo, pero no va a ser este el caso. Como proxy inverso nos va a permitir:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Añadir &lt;strong&gt;seguridad&lt;/strong&gt;, protegiendo al resto de servidores web del ataque directo de los usuarios.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Reescribir&lt;/strong&gt; las &lt;strong&gt;URLs&lt;/strong&gt; según nuestras necesidades.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Securizar&lt;/strong&gt; el acceso a nuestras aplicaciones web con &lt;strong&gt;HTTPS&lt;/strong&gt;, es decir, podremos enrutar la petición HTTP hacia HTTPS y securizar la comunicación entre los dos puntos.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Imaginemos que en nuestra red corporativa o doméstica, tenemos varios&lt;br&gt;
-servidores web en nuestra DMZ publicando diferentes aplicaciones web, pero&lt;br&gt;
-queremos controlar la publicación de cada una de éstas al exterior. En ese&lt;br&gt;
-caso, podríamos redirigir todo el tráfico HTTP entrante desde el firewall hacia el proxy HTTP y controlar la publicación de las aplicaciones web al exterior. Como he comentado anteriormente, podríamos añadir HTTPS obligatoriamente al acceder a una aplicación web, añadir autenticación básica (usuario y contraseña), etc.&lt;/p&gt;
-&lt;h2 id="configuracin"&gt;Configuración&lt;/h2&gt;
-&lt;p&gt;Vamos a suponer que Nginx ya se encuentra instalado en nuestro sistema. Si no fuera el caso, es posible consultar mi anterior articulo sobre la &lt;a href="http://manuelviera.com/blog/nginx/"&gt;instalación de Nginx&lt;/a&gt;. La configuración que obtengo, eliminando los comentarios, tras haber instalado Nginx desde los &lt;strong&gt;repositorios de Debian 7&lt;/strong&gt; (Wheezy) es la siguiente:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;root@nginx:/# grep -v &amp;quot;#&amp;quot; /etc/nginx/nginx.conf |uniq
-user www-data;
-worker_processes 4;
-pid /var/run/nginx.pid;
-
-events {
-  worker_connections 768;
-}
-
-http {
-
-  sendfile on;
-  tcp_nopush on;
-  tcp_nodelay on;
-  keepalive_timeout 65;
-  types_hash_max_size 2048;
-
-  include /etc/nginx/mime.types;
-  default_type application/octet-stream;
-
-  access_log /var/log/nginx/access.log;
-  error_log /var/log/nginx/error.log;
-
-  gzip on;
-  gzip_disable &amp;quot;msie6&amp;quot;;
-
-  include /etc/nginx/conf.d/*.conf;
-  include /etc/nginx/sites-enabled/*;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;NOTA: la configuración suele ser diferente dependiendo del método de&lt;br&gt;
-instalación: utilizando los repositorios de la distribución o compilando desde las fuentes.&lt;/p&gt;
-&lt;h3 id="qusignificastaconfiguracin"&gt;¿Qué significa ésta configuración?&lt;/h3&gt;
-&lt;p&gt;Podemos apreciar varias &lt;strong&gt;directivas&lt;/strong&gt; que son &lt;strong&gt;globales&lt;/strong&gt;: &lt;code&gt;user&lt;/code&gt;,&lt;br&gt;
-&lt;code&gt;worker_processes&lt;/code&gt; y &lt;code&gt;pid&lt;/code&gt;; y varios bloques como &lt;code&gt;events&lt;/code&gt;, que configura el número de conexiones para cada worker. El número de conexiones totales es:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;total_connections = worker_processes * worker_connections&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Y el bloque &lt;code&gt;http&lt;/code&gt; que define algnas directivas como:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;keepalive_timeout&lt;/code&gt; : tiempo que se va a mantener una conexión viva.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;include&lt;/code&gt; : permite incluir ficheros que contienen más configuración como en este caso los tipos MIME y los ficheros de configuración en el directorio sites-enabled.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;access_log&lt;/code&gt; : define el fichero de acceso donde se registrarán las conexiones al proxy http.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;error_log&lt;/code&gt; : igual que access_log pero solo registrará los intentos fallidos de conexión.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gzip&lt;/code&gt; : permite comprimir los datos enviados con gzip, consumiendo menos ancho de banda.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Es posible que dentro del bloque &lt;code&gt;http&lt;/code&gt; podamos encontrar otro bloque&lt;br&gt;
-llamado &lt;code&gt;server&lt;/code&gt; y que contenga algo como lo siguiente:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;server {
-    listen       80;
-    server_name  localhost;
-
-    location / {
-        root   html;
-        index  index.html index.htm;
-    }
-
-    error_page   500 502 503 504  /50x.html;
-    location = /50x.html {
-        root   html;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Es necesario eliminar este bloque de configuración en el fichero de&lt;br&gt;
-configuración principal nginx.conf ya que el bloque &lt;code&gt;server&lt;/code&gt; lo definiremos&lt;br&gt;
-para cada uno de los sitios a publicar, dentro del directorio &lt;code&gt;sites- available&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id="sitesavailableysitesenabled"&gt;sites-available y sites-enabled&lt;/h2&gt;
-&lt;p&gt;Normalmente, y sobretodo si se instala Nginx utilizando los repositorios del sistema, durante la instalación se crean dos directorios llamados &lt;code&gt;sites-available&lt;/code&gt; y &lt;code&gt; sites-enabled&lt;/code&gt;, pero ¿para qué función tienen y para qué se usan? Muy fácil.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;sites-available&lt;/code&gt; : se utiliza para almacenar la configuración de cada sitio o aplicación web. Siguiendo las buenas prácticas, se debe crear un fichero de configuración por cada sitio, para evitar tener la configuración de todos los sitios en un solo fichero.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sites-enabled&lt;/code&gt; : directorio que utiliza Nginx para saber qué sitios están activados. El contenido de este directorio deben ser enlaces simbólicos que apuntan a los ficheros de configuración del directorio &lt;code&gt;sites-available&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: la creación de los directorios &lt;code&gt;sites-available&lt;/code&gt; y &lt;code&gt;sites-enabled&lt;/code&gt; son una práctica muy común realizada por la paquetería del sistema, es decir, es una acción que realiza el paquete descargado de los repositorios durante la instalación. Pero es muy probable que dichos directorios no aparezcan si se instala Nginx desde las fuentes. En ese caso, solamente habría que crear dichos directorios e incluir el futuro contenido de estos mediante la directiva &lt;code&gt;include&lt;/code&gt; en la configuración principal de Nginx.&lt;/p&gt;
-&lt;h2 id="publicandounsitioweb"&gt;Publicando un sitio web&lt;/h2&gt;
-&lt;p&gt;Ya estamos casi a punto. Sólo nos falta configurar una redirección en el&lt;br&gt;
-directorio &lt;code&gt;sites-available&lt;/code&gt; y enlazarla con un enlace simbólico en &lt;code&gt;sites- enabled&lt;/code&gt;, así que vamos a ello!&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Creamos el fichero de configuración test.manuelviera.es.conf en el&lt;br&gt;
-directorio &lt;code&gt;/etc/nginx/sites-available/&lt;/code&gt; con una configuración como la&lt;br&gt;
-siguiente:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   server {
-       listen 80;
-       server_name     test.manuelviera.es;
-       location / {
-           proxy_pass http://192.168.1.200:8080;
-           proxy_set_header  X-Real-IP  $remote_addr;
-           proxy_set_header  Host  $http_host;
-       }
-   }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: creo que es buena práctica establecer como nombre de fichero el mismo que el dominio que estamos publicando, es decir, el valor de la directiva&lt;code&gt;server_name&lt;/code&gt;. De esta forma, le indicando nuestro Nginx que cuando reciba una petición del dominio &amp;quot;test.manuelviera.es&amp;quot; por el puerto 80, debe redirigir la petición HTTP al host 192.168.1.200 al puerto 8080, que es donde se encuentra nuestra aplicación web desplegada.&lt;/p&gt;
-&lt;p&gt;El ingrediente estrella en esta configuración es el uso del módulo &lt;code&gt;proxy_pass&lt;/code&gt; incluido en el Core de Nginx, y es la directiva que nos permite pasar la petición que nos llega hacia otro destino, en este caso, el servidor web donde se aloja nuestra supuesta aplicación.&lt;/p&gt;
-&lt;p&gt;Como podéis observar, también hemos hecho uso de otra directiva llamada &lt;code&gt;proxy_set_header&lt;/code&gt; que nos permite añadir o modificar cabeceras, en este caso hemos editado dos cabeceras:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;X-Real-IP&lt;/code&gt; : contiene la IP del cliente que inicia la petición, y se ha establecido el valor de la variable $remote_addr con la idea de que al servidor destino le llegue la IP del cliente y no la del proxy HTTP. Si no se hubiese modificado esta cabecera (header) la IP que recibiría el servidor web objetivo siempre sería la del proxy HTTP.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;Host&lt;/code&gt; : Al igual que la anterior cabecera, establecemos el valor con el contenido de la variable $http_host, es decir, el nombre de host que especificó el cliente.&lt;/p&gt;
-&lt;ol start="2"&gt;
-&lt;li&gt;
-&lt;p&gt;Una vez configurado nuestra primera redirección, sólo nos falta activarla, es decir, crear un enlace simbólico hacia esta en el directorio&lt;br&gt;
-sites-enabled:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   root@nginx:~# cd /etc/nginx/sites-enabled/
-   root@nginx:/etc/nginx/sites-enabled# ln -s ../sites-available/test.manuelviera.es.conf
-   root@nginx:/etc/nginx/sites-enabled# ls -l
-   total 0
-   
-   lrwxrwxrwx 1 root root 43 Jan  6 12:05 test.manuelviera.es.conf -&amp;gt; ../sites-available/test.manuelviera.es.conf
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Una vez enlazada el fichero de configuración, debemos obligar a Nginx a recargar la configuración con la siguiente instrucción:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   root@nginx:~# service nginx reload
-   Reloading nginx configuration: nginx.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;¡Perfecto! Pero aún nos queda el último paso, y no por ello menos importante...&lt;/p&gt;
-&lt;h2 id="comprobarelfuncionamientodelproxyhttp"&gt;Comprobar el funcionamiento del proxy HTTP&lt;/h2&gt;
-&lt;p&gt;Siempre debemos comprobar que lo que hemos hecho realmente funciona, ya que de no ser así, es como si no hubiésemos hecho nada y daremos mala imagen como profesionales. Si lo que tenemos es un entorno de prueba, que aún no se encuentra implantado en producción, una prueba muy sencilla sería utilizar el fichero &lt;code&gt;/etc/hosts&lt;/code&gt; añadiendo la IP de nuestro proxy HTTP y el dominio especificado en la directiva &lt;code&gt;server_name&lt;/code&gt;, de la siguiente forma:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo sh -c &amp;quot;echo 192.168.1.200 test.manuelviera.es &amp;gt;&amp;gt; /etc/hosts&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: en mi caso, el proxy HTTP se encuentra en la IP 192.168.1.200. Si&lt;br&gt;
-todo ha ido bien, nuestro proxy HTTP, tras realizar la petición, deber habernos redirigido al host especificado en la directiva &lt;code&gt;proxy_pass&lt;/code&gt; :-)&lt;/p&gt;
-&lt;p&gt;Otra prueba sencilla para comprobar que el proxy HTTP funciona es especificar un sitio externo como terra.es, google.es, etc; en la directiva &lt;code&gt;proxy_pass&lt;/code&gt;, si aún no se dispone de un servidor web interno que sirva una aplicación web.&lt;/p&gt;
-&lt;p&gt;Y esto ha sido todo amigos! Espero que os sea de utilidad y Feliz día de Reyes!&lt;/p&gt;
-&lt;p&gt;Un saludo.&lt;/p&gt;
 &lt;!--kg-card-end: markdown--&gt;</content:encoded></item></channel></rss>
