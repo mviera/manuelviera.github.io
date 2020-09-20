@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>offtopic - Manuel Viera</title>
+  <title>PostgreSQL and read-only users - the easiest way</title>
   <link rel="stylesheet" href="../../assets/css/screen.css?v=3c2ce19071">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800">
 
@@ -36,20 +36,36 @@
   <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
     <link rel="canonical" href="index.html" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="amp/index.html" />
     
     <meta property="og:site_name" content="Manuel Viera" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="offtopic - Manuel Viera" />
-    <meta property="og:url" content="http://manuelviera.com/tag/offtopic/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="offtopic - Manuel Viera" />
-    <meta name="twitter:url" content="http://manuelviera.com/tag/offtopic/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PostgreSQL and read-only users - the easiest way" />
+    <meta property="og:description" content="Sometimes someone asks you to create a read-only user just for backups, giving a non-privileged user to a non-technical person. In this post, I&#x27;ll show you the easiest way to create one." />
+    <meta property="og:url" content="http://manuelviera.com/blog/postgresql-and-read-only-users-the-easiest-way/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1519658422992-0c8495f08389?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ" />
+    <meta property="article:published_time" content="2020-09-20T15:54:17.000Z" />
+    <meta property="article:modified_time" content="2020-09-20T15:54:17.000Z" />
+    <meta property="article:tag" content="tech" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PostgreSQL and read-only users - the easiest way" />
+    <meta name="twitter:description" content="Sometimes someone asks you to create a read-only user just for backups, giving a non-privileged user to a non-technical person. In this post, I&#x27;ll show you the easiest way to create one." />
+    <meta name="twitter:url" content="http://manuelviera.com/blog/postgresql-and-read-only-users-the-easiest-way/" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1519658422992-0c8495f08389?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Manuel Viera" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="tech" />
     <meta name="twitter:site" content="@mviera" />
+    <meta name="twitter:creator" content="@mviera" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="1357" />
     
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "Series",
+    "@type": "Article",
     "publisher": {
         "@type": "Organization",
         "name": "Manuel Viera",
@@ -61,8 +77,33 @@
             "height": 48
         }
     },
-    "url": "http://manuelviera.com/tag/offtopic/",
-    "name": "offtopic",
+    "author": {
+        "@type": "Person",
+        "name": "Manuel Viera",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://manuelviera.com/content/images/2020/06/2020-06-22-161222_428x430_scrot.png",
+            "width": 428,
+            "height": 430
+        },
+        "url": "http://manuelviera.com/author/mviera/",
+        "sameAs": [
+            "https://manuelviera.com",
+            "https://twitter.com/mviera"
+        ]
+    },
+    "headline": "PostgreSQL and read-only users - the easiest way",
+    "url": "http://manuelviera.com/blog/postgresql-and-read-only-users-the-easiest-way/",
+    "datePublished": "2020-09-20T15:54:17.000Z",
+    "dateModified": "2020-09-20T15:54:17.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://images.unsplash.com/photo-1519658422992-0c8495f08389?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ",
+        "width": 2000,
+        "height": 1357
+    },
+    "keywords": "tech",
+    "description": "Sometimes someone asks you to create a read-only user just for backups, giving a non-privileged user to a non-technical person. In this post, I&#x27;ll show you the easiest way to create one.",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://manuelviera.com/"
@@ -71,10 +112,10 @@
     </script>
 
     <meta name="generator" content="Ghost 3.19" />
-    <link rel="alternate" type="application/rss+xml" title="Manuel Viera" href="../../blog/rss/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="Manuel Viera" href="../rss/index.html" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap">
 </head>
-<body class="tag-template tag-offtopic">
+<body class="post-template tag-tech">
   <svg width="0" height="0" style="display: none;">
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="arrow-left">
     <title>arrow-left</title>
@@ -164,8 +205,8 @@
   </div>
     <nav class="main-nav hidden-xs hidden-sm hidden-md">
         <a class="menu-item menu-item-about" href="../../about/index.html">about</a>
-  <a class="menu-item menu-item-tech" href="../tech/index.html">tech</a>
-  <a class="menu-item menu-item-self-tracking" href="../self-tracking/index.html">self-tracking</a>
+  <a class="menu-item menu-item-tech" href="../../tag/tech/index.html">tech</a>
+  <a class="menu-item menu-item-self-tracking" href="../../tag/self-tracking/index.html">self-tracking</a>
   <a class="menu-item menu-item-author" href="../../author/mviera/index.html">author</a>
 
     </nav>
@@ -182,8 +223,8 @@
       <div class="container">
         <nav class="mobile-nav">
             <a class="menu-item menu-item-about" href="../../about/index.html">about</a>
-  <a class="menu-item menu-item-tech" href="../tech/index.html">tech</a>
-  <a class="menu-item menu-item-self-tracking" href="../self-tracking/index.html">self-tracking</a>
+  <a class="menu-item menu-item-tech" href="../../tag/tech/index.html">tech</a>
+  <a class="menu-item menu-item-self-tracking" href="../../tag/self-tracking/index.html">self-tracking</a>
   <a class="menu-item menu-item-author" href="../../author/mviera/index.html">author</a>
 
         </nav>
@@ -196,85 +237,255 @@
   </div>
 </header>
 
+    <header class="sticky kg-width-full">
+      <div class="sticky-title">PostgreSQL and read-only users - the easiest way</div>
+      <button class="button-icon sticky-toc-button">
+        <svg class="icon"><use xlink:href="#table-of-contents"></use></svg>
+        <div class="sticky-toc"></div>
+      </button>
+      <div class="sticky-track">
+        <div class="sticky-progress"></div>
+      </div>
+    </header>
       <div class="site-content">
         
 <div class="content-area">
   <main class="site-main">
-      <section class="tag kg-width-normal">
-        <h1 class="tag-name">offtopic</h1>
-            <div class="tag-list">
-              <span class="tag-list-label">More:</span>
-                <a class="tag-list-item" href="../self-tracking/index.html">self-tracking</a>
-                <a class="tag-list-item" href="../tech/index.html">tech</a>
-            </div>
-      </section>
-    <div class="post-feed kg-width-normal">
-        <article class="feed post tag-offtopic no-image">
+      <article class="single post tag-tech featured kg-width-narrow">
+  <header class="single-header">
+      <div class="single-meta">
+        <span class="single-meta-item single-meta-date">
+          <time datetime="2020-09-20">
+            Sep 20, 2020
+          </time>
+        </span>
+        <span class="single-meta-item single-meta-length">
+          1 min read
+        </span>
+          <span class="single-meta-item single-meta-tag">
+            <a class="post-tag post-tag-tech" href="../../tag/tech/index.html">
+              #tech
+            </a>
+          </span>
+      </div>
+    <h1 class="single-title">PostgreSQL and read-only users - the easiest way</h1>
+      <div class="single-excerpt">
+        Sometimes someone asks you to create a read-only user just for backups, giving a non-privileged user to a non-technical person. In this post, I&#x27;ll show you the easiest way to create one.
+      </div>
+  </header>
+      <div class="single-media kg-width-wide u-placeholder horizontal">
+        <img class="lazyload u-object-fit"
+          data-srcset="https://images.unsplash.com/photo-1519658422992-0c8495f08389?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 400w,
+https://images.unsplash.com/photo-1519658422992-0c8495f08389?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 750w,
+https://images.unsplash.com/photo-1519658422992-0c8495f08389?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 960w,
+https://images.unsplash.com/photo-1519658422992-0c8495f08389?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 1140w"
+          data-sizes="auto"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          alt="PostgreSQL and read-only users - the easiest way"
+        >
+      </div>
+  <div class="single-content u-text-format">
+      <!--kg-card-begin: markdown--><p>Here you have the quick recipe:</p>
+<pre><code>CREATE ROLE readonly;
+GRANT CONNECT ON DATABASE mydatabase TO readonly;
+\connect mydatabase
+GRANT USAGE ON SCHEMA public to readonly;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO readonly;
+CREATE USER myuser1 WITH PASSWORD 'secret_passwd';
+GRANT readonly TO myuser1;
+</code></pre>
+<h2 id="thedeepdive">The deep dive(?)</h2>
+<p>Let's suppose you already have a well-securitized database with one or more users with the right privileges. If you still don't have your PostgreSQL database well protected, I recently wrote about <a href="https://manuelviera.com/blog/postgresql-and-how-to-shield-your-databases-well/">how to securitize your database access well</a>. You might find it useful.</p>
+<p>Okay, so imagine someone asking you to create a read-only user to let an external provider connect and consume data, exporting reports, or whatever.</p>
+<p>As we won't want to repeat all this process each time we need to create a read-only user, we'll create a role and then assign it.</p>
+<p>So, for creating the read-only role, just type the following:</p>
+<pre><code>CREATE ROLE readonly;
+</code></pre>
+<p>We want this role to be able to connect to our database, so:</p>
+<pre><code>GRANT CONNECT ON DATABASE mydatabase TO readonly;
+</code></pre>
+<p>But, as you might know, this permission is not enough; we need to allow it to allow access to objects in the <code>public</code> schema.</p>
+<pre><code>\connect mydatabase
+GRANT USAGE ON SCHEMA public to readonly;
+</code></pre>
+<p>As we may want to allow it to access all tables in the database, we'll type:</p>
+<pre><code>GRANT SELECT ON ALL TABLES IN SCHEMA public TO readonly;
+</code></pre>
+<p>But, If you only want to give access to specific tables, then type:</p>
+<pre><code>GRANT SELECT ON table_name TO readonly;
+</code></pre>
+<p>Now we have the role ready to use, so we're going to create a user and add it as a member.</p>
+<pre><code>CREATE USER myuser1 WITH PASSWORD 'secret_passwd';
+GRANT readonly TO myuser1;
+</code></pre>
+<p>And that's it! Next time you need to create a read-only user it'll be a quick done task ;-)</p>
+<hr>
+<p>If you have any question, doubt, or any improvement, feel free to let me know in this <a http://manuelviera.com/blog/postgresql-and-read-only-users-the-easiest-way/href="">Twitter thread</a> :)</p>
+<p>If you found it useful, coffee is always appreciated. Thanks in advance!</p>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="mviera" data-color="#eaa700" data-emoji=""  data-font="Arial" data-text="Buy me a coffee" data-outline-color="#000" data-font-color="#000" data-coffee-color="#fff" ></script>
+<h3 id="moreinfoat">More info at</h3>
+<p><a href="https://aws.amazon.com/de/blogs/database/managing-postgresql-users-and-roles/">Managing PostgreSQL users and roles</a></p>
+<!--kg-card-end: markdown-->
+  </div>
+    <footer class="single-footer kg-width-normal">
+      <div class="single-footer-left">
+          <div class="navigation navigation-previous">
+            <a class="navigation-link" href="../postgresql-and-how-to-shield-your-databases-well/index.html">
+              <svg class="icon navigation-icon"><use xlink:href="#arrow-left"></use></svg>
+            </a>
+          </div>
+      </div>
+      <div class="single-footer-middle">
+        <div class="single-footer-top">
+          <h3 class="single-footer-title">Published by:</h3>
+          <div class="author-list">
+              <div class="author-image-placeholder u-placeholder square">
+                <a href="../../author/mviera/index.html" title="Manuel Viera">
+                  <img class="author-image lazyload u-object-fit" data-src="/content/images/size/w150/2020/06/2020-06-22-161222_428x430_scrot.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Manuel Viera">
+                </a>
+              </div>
+          </div>
+        </div>
+        <div class="single-footer-bottom">
+          <div class="share">
+            <a class="share-link share-link-facebook" href="https://www.facebook.com/sharer.php?u=http://manuelviera.com/blog/postgresql-and-read-only-users-the-easiest-way/" target="_blank" rel="noopener noreferrer">
+              <svg class="icon icon-facebook"><use xlink:href="#facebook"></use></svg>
+              Share
+            </a>
+            <a class="share-link share-link-twitter" href="https://twitter.com/intent/tweet?url=http://manuelviera.com/blog/postgresql-and-read-only-users-the-easiest-way/&text=PostgreSQL%20and%20read-only%20users%20-%20the%20easiest%20way" target="_blank" rel="noopener noreferrer">
+              <svg class="icon icon-twitter"><use xlink:href="#twitter"></use></svg>
+              Tweet
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="single-footer-right">
+      </div>
+    </footer>
+</article>          <section class="related-wrapper kg-width-full">
+      <div class="container">
+        <div class="kg-width-normal">
+          <h3 class="related-title">You might also like...</h3>
+          <div class="related-feed">
+              <article class="feed post featured">
   <div class="feed-calendar">
     <div class="feed-calendar-month">
-      Nov
+      Sep
     </div>
     <div class="feed-calendar-day">
-      02
+      13
     </div>
   </div>
-  <h2 class="feed-title">Y pasaron dos años ...</h2>
+  <h2 class="feed-title">PostgreSQL and how to shield your databases well</h2>
   <div class="feed-right">
     <svg class="icon feed-visibility feed-visibility-public"><use xlink:href="#star"></use></svg>
     <div class="feed-length">
-      1 min read
+      2 min read
     </div>
   </div>
   <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
-  <a class="u-permalink" href="../../blog/y-pasaron-dos-anos/index.html"></a>
-</article>        <article class="feed post tag-offtopic no-image">
-  <div class="feed-calendar">
-    <div class="feed-calendar-month">
-      Dec
-    </div>
-    <div class="feed-calendar-day">
-      31
-    </div>
-  </div>
-  <h2 class="feed-title">Adiós 2012, Hello 2013!</h2>
-  <div class="feed-right">
-    <svg class="icon feed-visibility feed-visibility-public"><use xlink:href="#star"></use></svg>
-    <div class="feed-length">
-      1 min read
-    </div>
-  </div>
-  <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
-  <a class="u-permalink" href="../../blog/adios-2012-hello-2013/index.html"></a>
-</article>        <article class="feed post tag-offtopic no-image">
+  <a class="u-permalink" href="../postgresql-and-how-to-shield-your-databases-well/index.html"></a>
+</article>              <article class="feed post featured">
   <div class="feed-calendar">
     <div class="feed-calendar-month">
       Aug
     </div>
     <div class="feed-calendar-day">
-      20
+      10
     </div>
   </div>
-  <h2 class="feed-title">Retomando el blog</h2>
+  <h2 class="feed-title">Find and the importance of parameters order</h2>
   <div class="feed-right">
     <svg class="icon feed-visibility feed-visibility-public"><use xlink:href="#star"></use></svg>
     <div class="feed-length">
-      1 min read
+      2 min read
     </div>
   </div>
   <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
-  <a class="u-permalink" href="../../blog/retomando-el-blog/index.html"></a>
-</article>    </div>
-    <nav class="pagination">
-</nav>
-<div class="infinite-scroll-status">
-  <div class="infinite-scroll-request"></div>
-</div>
-<div class="infinite-scroll-action kg-width-normal">
-  <button class="button button-secondary infinite-scroll-button">Load more</button>
+  <a class="u-permalink" href="../find-and-the-importance-of-parameters-order/index.html"></a>
+</article>              <article class="feed post">
+  <div class="feed-calendar">
+    <div class="feed-calendar-month">
+      Aug
+    </div>
+    <div class="feed-calendar-day">
+      02
+    </div>
+  </div>
+  <h2 class="feed-title">Compartiendo ficheros con GlusterFS</h2>
+  <div class="feed-right">
+    <svg class="icon feed-visibility feed-visibility-public"><use xlink:href="#star"></use></svg>
+    <div class="feed-length">
+      6 min read
+    </div>
+  </div>
+  <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
+  <a class="u-permalink" href="../compartiendo-ficheros-con-glusterfs-2/index.html"></a>
+</article>              <article class="feed post no-image">
+  <div class="feed-calendar">
+    <div class="feed-calendar-month">
+      Nov
+    </div>
+    <div class="feed-calendar-day">
+      12
+    </div>
+  </div>
+  <h2 class="feed-title">AWS Summit Barcelona 2015</h2>
+  <div class="feed-right">
+    <svg class="icon feed-visibility feed-visibility-public"><use xlink:href="#star"></use></svg>
+    <div class="feed-length">
+      7 min read
+    </div>
+  </div>
+  <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
+  <a class="u-permalink" href="../aws-summit-barcelona-2015/index.html"></a>
+</article>              <article class="feed post no-image">
+  <div class="feed-calendar">
+    <div class="feed-calendar-month">
+      Apr
+    </div>
+    <div class="feed-calendar-day">
+      29
+    </div>
+  </div>
+  <h2 class="feed-title">Instalar Solr en Jetty</h2>
+  <div class="feed-right">
+    <svg class="icon feed-visibility feed-visibility-public"><use xlink:href="#star"></use></svg>
+    <div class="feed-length">
+      4 min read
+    </div>
+  </div>
+  <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
+  <a class="u-permalink" href="../instalar-solr-en-jetty/index.html"></a>
+</article>          </div>
+        </div>
+      </div>
+    </section>
+        <div class="comment kg-width-narrow">
+  <div id="disqus_thread">
+    <button class="button button-secondary" onclick="loadDisqus();">Load comments</button>
+  </div>
 </div>
 
+<script>
+  // DON'T EDIT BELOW THIS LINE
+  if (themeOptions.disqus_shortname == '') {
+    document.querySelector('.comment').remove();
+  }
+  
+  var disqus_config = function () {
+    this.page.url = 'http://manuelviera.com/blog/postgresql-and-read-only-users-the-easiest-way/';
+    this.page.identifier = 'ghost-5f5fdb57db2a88526e3dffce';
+  };
 
-  </main>
+  function loadDisqus() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://' + themeOptions.disqus_shortname + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  };
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>  </main>
 </div>
       </div>
       <footer class="site-footer">
@@ -311,9 +522,9 @@
         <div class="popular-wrapper">
           <h4 class="popular-title">Popular tags</h4>
           <div class="popular-feed">
-              <a class="popular" href="../tech/index.html">tech</a>
-              <a class="popular" href="../self-tracking/index.html">self-tracking</a>
-              <a class="popular" href="index.html">offtopic</a>
+              <a class="popular" href="../../tag/tech/index.html">tech</a>
+              <a class="popular" href="../../tag/self-tracking/index.html">self-tracking</a>
+              <a class="popular" href="../../tag/offtopic/index.html">offtopic</a>
           </div>
         </div>
     <div class="search-result"></div>
