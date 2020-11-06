@@ -1,4 +1,36 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Manuel Viera</title><description>I'm Manu and this is my personal lifelog. Here you'll find some tech posts, self-tracking metrics and other random thoughts.</description><link>http://manuelviera.com/</link><image><url>http://manuelviera.com/favicon.png</url><title>Manuel Viera</title><link>http://manuelviera.com/</link></image><generator>Ghost 3.19</generator><lastBuildDate>Fri, 02 Oct 2020 21:14:32 GMT</lastBuildDate><atom:link href="http://manuelviera.com/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Media consumption in September 2020</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;ul&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Manuel Viera</title><description>I'm Manu and this is my personal lifelog. Here you'll find some tech posts, self-tracking metrics and other random thoughts.</description><link>http://manuelviera.com/</link><image><url>http://manuelviera.com/favicon.png</url><title>Manuel Viera</title><link>http://manuelviera.com/</link></image><generator>Ghost 3.19</generator><lastBuildDate>Fri, 06 Nov 2020 18:06:57 GMT</lastBuildDate><atom:link href="http://manuelviera.com/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Media consumption in October 2020</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;ul&gt;
+&lt;li&gt;Read 3 books &lt;output&gt;(6h 32min)&lt;/output&gt; and 12 articles.&lt;/li&gt;
+&lt;li&gt;Watched 2 movies &lt;output&gt;(3h 25min)&lt;/output&gt;, 8 TV episodes &lt;output&gt;(6h 38min)&lt;/output&gt; and 1 talks &lt;output&gt;(1h)&lt;/output&gt;.&lt;/li&gt;
+&lt;li&gt;Listened to 0 podcasts episodes &lt;output&gt;(0 min)&lt;/output&gt;.&lt;/li&gt;
+&lt;li&gt;Played 3 video games &lt;output&gt;(13h 48min)&lt;/output&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="books"&gt;Books&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://www.amazon.es/gp/product/B01LXWQUFF/"&gt;Docker Deep Dive&lt;/a&gt; &lt;output&gt;(Nigel Poulton)&lt;/output&gt;&lt;br&gt;
+░░░░░░░░░░▓▓▓▓▓ &lt;output&gt;Progress: 66%-100%&lt;/output&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.amazon.es/How-English-Days-independent-learner-ebook/dp/B07V6F52X1/"&gt;How To English: 31 Days to&lt;/a&gt;&lt;/p&gt;</description><link>http://manuelviera.com/blog/media-consumption-in-october-2020/</link><guid isPermaLink="false">5fa57eadac5dc02f8f11b86e</guid><category>self-tracking</category><dc:creator>Manuel Viera</dc:creator><pubDate>Fri, 06 Nov 2020 18:06:37 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;ul&gt;
+&lt;li&gt;Read 3 books &lt;output&gt;(6h 32min)&lt;/output&gt; and 12 articles.&lt;/li&gt;
+&lt;li&gt;Watched 2 movies &lt;output&gt;(3h 25min)&lt;/output&gt;, 8 TV episodes &lt;output&gt;(6h 38min)&lt;/output&gt; and 1 talks &lt;output&gt;(1h)&lt;/output&gt;.&lt;/li&gt;
+&lt;li&gt;Listened to 0 podcasts episodes &lt;output&gt;(0 min)&lt;/output&gt;.&lt;/li&gt;
+&lt;li&gt;Played 3 video games &lt;output&gt;(13h 48min)&lt;/output&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="books"&gt;Books&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://www.amazon.es/gp/product/B01LXWQUFF/"&gt;Docker Deep Dive&lt;/a&gt; &lt;output&gt;(Nigel Poulton)&lt;/output&gt;&lt;br&gt;
+░░░░░░░░░░▓▓▓▓▓ &lt;output&gt;Progress: 66%-100%&lt;/output&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.amazon.es/How-English-Days-independent-learner-ebook/dp/B07V6F52X1/"&gt;How To English: 31 Days to be an independent learner&lt;/a&gt; &lt;output&gt;(Adam David Broughton)&lt;/output&gt;&lt;br&gt;
+▓▓▓░░░░░░░░░░░░ &lt;output&gt;Progress: 0-18%&lt;/output&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.amazon.es/Los-pelda%C3%B1os-del-%C3%A9xito-COLECCION/dp/8416928185/"&gt;Los 88 Peldaños del Éxito&lt;/a&gt; &lt;output&gt;(Anxo Pérez Rodríguez)&lt;/output&gt;&lt;br&gt;
+▓▓▓▓░░░░░░░░░░░ &lt;output&gt;Progress: 0-24%&lt;/output&gt;&lt;/p&gt;
+&lt;h4 id="recommendedarticles"&gt;Recommended articles&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://blog.doist.com/pay-yourself-first/"&gt;Want a More Productive Morning Routine? “Pay” Yourself First&lt;/a&gt; &lt;output&gt;(Chase Warrington)&lt;/output&gt;&lt;br&gt;
+&lt;a href="https://blog.strava.com/ten-reasons-to-get-about-by-bike-20347/"&gt;Ten reasons to get about by bike&lt;/a&gt; &lt;output&gt;(Strava Stories)&lt;/output&gt;&lt;br&gt;
+&lt;a href="https://briantracy.xyz/writing/copy-paste-shell.html"&gt;Don't Copy Paste Into A Shell&lt;/a&gt; &lt;output&gt;(Brian Tracy)&lt;/output&gt;&lt;br&gt;
+&lt;a href="https://capiche.com/e/markdown-history"&gt;The story behind Markdown&lt;/a&gt; &lt;output&gt;(Matthew Guay)&lt;/output&gt;&lt;br&gt;
+&lt;a href="https://www.inc.com/jessica-stillman/winter-mental-health-scandinavia.html"&gt;It’s Going to Be a Long, Dark Covid Winter. Scandinavian Wisdom Can Help You Get Through It&lt;/a&gt; &lt;output&gt;(Jessica Stillman)&lt;/output&gt;&lt;br&gt;
+&lt;a href="https://elpais.com/ciencia/2020-10-24/un-salon-un-bar-y-una-clase-asi-contagia-el-coronavirus-en-el-aire.html"&gt;Un salón, un bar y una clase: así contagia el coronavirus en el aire&lt;/a&gt; &lt;output&gt;(El País)&lt;/output&gt;&lt;/p&gt;
+&lt;h4 id="recommendedmovies"&gt;Recommended Movies&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://www.netflix.com/title/81004797"&gt;Hogar&lt;/a&gt;&lt;output&gt;(Netflix)&lt;/output&gt;&lt;br&gt;
+A Spanish thriller movie about a publicist who's unemployed and is forced to sell his apartment. Then he becomes obsessed with the new occupants and begins spying them with darkers intentions.&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Media consumption in September 2020</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;ul&gt;
 &lt;li&gt;Read 1 book &lt;output&gt;(3h 40min)&lt;/output&gt; and 8 articles.&lt;/li&gt;
 &lt;li&gt;Watched 7 movies &lt;output&gt;(11h 13min)&lt;/output&gt;, 20 TV episodes &lt;output&gt;(16h 30min)&lt;/output&gt; and 1 talks &lt;output&gt;(1h)&lt;/output&gt;.&lt;/li&gt;
 &lt;li&gt;Listened to 0 podcasts episodes &lt;output&gt;(0min)&lt;/output&gt;.&lt;/li&gt;
@@ -694,302 +726,6 @@ configuración de ejemplo que viene incluida con Solr y que se encuentra en el d
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Si todo va bien, Solr debería estar accesible en &lt;a href="http://localhost:8080/solr"&gt;http://localhost:8080/solr&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Y esto es todo! Espero que os sirva de ayuda, a mi seguro que me va a ser muy útil cuando tenga que montar un Solr de nuevo.&lt;/p&gt;
-&lt;p&gt;Un saludo,&lt;br&gt;
-Manu.&lt;/p&gt;
-&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Empezando con MongoDB Part.II</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;En mi &lt;a href="http://manuelviera.com/blog/empezando-con-mongodb/"&gt;anterior post&lt;/a&gt; hablaba sobre &lt;a href="http://manuelviera.com/blog/empezando-con-mongodb/"&gt;cómo empezar con MongoDB&lt;/a&gt;, una base de datos NoSQL orientada a documentos; y como sigo estudiándola y me parece interesante, me gustaría seguir compartiendo y profundizando sobre el uso de MongoDB, así que he decidido escribir una segunda parte de este anterior post.&lt;/p&gt;
-&lt;p&gt;El&lt;/p&gt;</description><link>http://manuelviera.com/blog/empezando-con-mongodb-part-ii/</link><guid isPermaLink="false">5ee645fa46e19912dcb4161f</guid><category>tech</category><dc:creator>Manuel Viera</dc:creator><pubDate>Sat, 02 Mar 2013 00:00:00 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;En mi &lt;a href="http://manuelviera.com/blog/empezando-con-mongodb/"&gt;anterior post&lt;/a&gt; hablaba sobre &lt;a href="http://manuelviera.com/blog/empezando-con-mongodb/"&gt;cómo empezar con MongoDB&lt;/a&gt;, una base de datos NoSQL orientada a documentos; y como sigo estudiándola y me parece interesante, me gustaría seguir compartiendo y profundizando sobre el uso de MongoDB, así que he decidido escribir una segunda parte de este anterior post.&lt;/p&gt;
-&lt;p&gt;El objetivo de este post es bien sencillo. Cubrirá las operaciones principales básicas de MongoDB, también conocidas como operaciones &lt;strong&gt;CRUD&lt;/strong&gt;, que significa &lt;strong&gt;C&lt;/strong&gt; reate, &lt;strong&gt;R&lt;/strong&gt; ead, &lt;strong&gt;U&lt;/strong&gt; pdate y &lt;strong&gt;D&lt;/strong&gt; elete. ¡Así que empecemos con ello!&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;p&gt;Antes de nada empezaremos recordando cómo iniciar nuestra base de datos&lt;br&gt;
-utilizando el comando &lt;code&gt;mongod&lt;/code&gt;. Recordad que debemos especificar la ruta donde se almacenará la base de datos utilizando el parámetro &lt;code&gt;--dbpath&lt;/code&gt;. Dicho esto, podremos ejecutar una instrucción como la siguiente:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ mongod --dbpath test
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En este caso he utilizado un directorio llamado &lt;em&gt;test&lt;/em&gt; donde alojaré esta base de datos de pruebas. Apuntar que al no especificar un puerto con el parámetro &lt;code&gt;--port&lt;/code&gt;, la instancia de &lt;code&gt;mongod&lt;/code&gt; utilizará el puerto &lt;code&gt;27017&lt;/code&gt; por defecto.&lt;/p&gt;
-&lt;p&gt;Esta instrucción tiene un &amp;quot;inconveniente&amp;quot; y es que no podremos seguir&lt;br&gt;
-utilizando nuestra consola actual, pues la ejecución de &lt;code&gt;mongod&lt;/code&gt; se realiza en primer plano, o &lt;em&gt;foreground&lt;/em&gt;. Para evitar esto podemos hacer uso del parámetro &lt;code&gt;--fork&lt;/code&gt; que creará un &lt;em&gt;fork&lt;/em&gt; del proceso del servidor permitiendo poder seguir utilizando nuestra consola. La opción &lt;code&gt;--fork&lt;/code&gt; requiere que se especifique además un fichero de log utilizando el parámetro &lt;code&gt;--logpath&lt;/code&gt; o &lt;code&gt;--syslog&lt;/code&gt;, así que la instrucción quedaría de la siguiente forma:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ mongod --dbpath test --logappend --logpath test.log --fork
-forked process: 10017
-all output going to: /home/mviera/Downloads/mongodb/test.log
-child process started successfully, parent exiting
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Además he utilizado la opción &lt;code&gt;--logappend&lt;/code&gt; para evitar que&lt;br&gt;
-sobrescriba el contenido del fichero de log. En este caso seguirá concatenando datos al contenido actual del fichero.&lt;/p&gt;
-&lt;p&gt;Una vez funcionando nuestra instancia de &lt;code&gt;mongod&lt;/code&gt;, podemos conectarnos a la&lt;br&gt;
-consola utilizando el comando &lt;code&gt;mongo&lt;/code&gt; de la siguiente forma:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ mongo
-MongoDB shell version: 2.2.3
-connecting to: test
-&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; No es necesario especificar el puerto porque se está utilizando  el puerto por defecto (&lt;code&gt;27017&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;Todo listo, así que ¡empecemos a crear documentos!&lt;/p&gt;
-&lt;h2 id="introduciendocontenido"&gt;Introduciendo contenido&lt;/h2&gt;
-&lt;p&gt;Seguro que muchos ya os imagináis cómo se realiza este tipo de operación básica en una base de datos SQL como MySQL, PosgreSQL, SQLite, etc; pero en MongoDB se realiza de una forma muy diferente, por lo menos referente a cómo se realiza en una base de datos SQL.&lt;/p&gt;
-&lt;p&gt;Una inserción de datos sencilla en SQL podría ser de la siguiente forma:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;INSERT INTO users (firstName, lastName, username, age, city)
-VALUES ('Manuel', 'Viera', 'mviera', 26, 'Sevilla');
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En MongoDB es completamente diferente. En mi anterior post ya traté rápidamente las inserciones y si recordáis, comentaba que MongoDB está orientado a documentos y que estos documentos siguen el estilo JSON (JavaScript Object Notation).&lt;/p&gt;
-&lt;p&gt;Para realizar una inserción en MongoDB utilizaremos el método &lt;code&gt;insert()&lt;/code&gt; al que llamaremos pasándole como parámetro el documento a introducir, el cual,&lt;br&gt;
-siguiendo el ejemplo anterior, sería representado en formato JSON de la&lt;br&gt;
-siguiente forma:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
-  &amp;quot;firstName&amp;quot; : &amp;quot;Manuel&amp;quot;,
-  &amp;quot;lastName&amp;quot; : &amp;quot;Viera&amp;quot;,
-  &amp;quot;username&amp;quot; : &amp;quot;mviera&amp;quot;,
-  &amp;quot;age&amp;quot; : 26,
-  &amp;quot;city&amp;quot; : &amp;quot;Sevilla&amp;quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Recordad también que en MongoDB los documentos se almacenan en colecciones (o &lt;em&gt;collections&lt;/em&gt; en inglés), así que para seguir con el ejemplo introduciremos este documento en una colección llamada &lt;code&gt;users&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.insert({
- firstName: &amp;quot;Manuel&amp;quot;,
- lastName: &amp;quot;Viera&amp;quot;,
- username: &amp;quot;mviera&amp;quot;,
- age: 26,
- city: &amp;quot;Sevilla&amp;quot;
- })
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Bien. ¿Qué tenemos hasta ahora? Por defecto cuando nos conectamos a una&lt;br&gt;
-instancia MongoDB sin especificar una base de datos, se utilizará por defecto &lt;code&gt;test&lt;/code&gt;. Así que hemos creado un documento dentro de la colección &lt;code&gt;users&lt;/code&gt; en la base de datos &lt;code&gt;test&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; A modo de recordatorio, no es necesario crear previamente la&lt;br&gt;
-colección antes de introducir documentos. MongoDB lo hará por nosotros&lt;br&gt;
-automáticamente si la colección no existe.&lt;/p&gt;
-&lt;p&gt;¿Pero cómo recuperamos los datos introducidos?&lt;/p&gt;
-&lt;h2 id="recuperandolosdocumentos"&gt;Recuperando los documentos&lt;/h2&gt;
-&lt;p&gt;Para seleccionar, buscar, encontrar documentos dentro de nuestra colección&lt;br&gt;
-utilizaremos uno de los siguientes métodos:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;find()&lt;/code&gt; : que devolverá un cursor con todos los documentos recuperados de la base de datos.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;findOne()&lt;/code&gt; : que devuelve solamente un documento.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;El uso de &lt;code&gt;find()&lt;/code&gt; es muy sencillo, como podéis ver a continuación:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.find()
-{ &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;5131f87b350e650534c68d8e&amp;quot;), &amp;quot;firstName&amp;quot; : &amp;quot;Manuel&amp;quot;, &amp;quot;lastName&amp;quot; : &amp;quot;Viera&amp;quot;, &amp;quot;username&amp;quot; : &amp;quot;mviera&amp;quot;, &amp;quot;age&amp;quot; : 26, &amp;quot;city&amp;quot; : &amp;quot;Sevilla&amp;quot; }
-&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En este caso tanto &lt;code&gt;find()&lt;/code&gt; como &lt;code&gt;findOne()&lt;/code&gt; devolverán resultados idénticos, pues ahora mismo sólo contamos con un documento en nuestra colección &lt;code&gt;users&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.findOne()
-{
-        &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;5131f87b350e650534c68d8e&amp;quot;),
-        &amp;quot;firstName&amp;quot; : &amp;quot;Manuel&amp;quot;,
-        &amp;quot;lastName&amp;quot; : &amp;quot;Viera&amp;quot;,
-        &amp;quot;username&amp;quot; : &amp;quot;mviera&amp;quot;,
-        &amp;quot;age&amp;quot; : 26,
-        &amp;quot;city&amp;quot; : &amp;quot;Sevilla&amp;quot;
-}
-&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si os fijáis en un detalle, &lt;code&gt;findOne()&lt;/code&gt; devuelve el contenido de una forma&lt;br&gt;
-mucho más legible al ojo humano que &lt;code&gt;find()&lt;/code&gt;. Esto también podemos conseguirlo con &lt;code&gt;find()&lt;/code&gt; si utilizamos además el método &lt;code&gt;pretty()&lt;/code&gt; de la siguiente forma:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.find().pretty()
-{
-        &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;5131f87b350e650534c68d8e&amp;quot;),
-        &amp;quot;firstName&amp;quot; : &amp;quot;Manuel&amp;quot;,
-        &amp;quot;lastName&amp;quot; : &amp;quot;Viera&amp;quot;,
-        &amp;quot;username&amp;quot; : &amp;quot;mviera&amp;quot;,
-        &amp;quot;age&amp;quot; : 26,
-        &amp;quot;city&amp;quot; : &amp;quot;Sevilla&amp;quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Al igual que &lt;code&gt;pretty()&lt;/code&gt; también podemos utilizar otros métodos como &lt;code&gt;count()&lt;/code&gt; que nos devuelve la cantidad total de documentos devueltos:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.find().count()
-1
-&amp;gt;
-
-O directamente sobre la colección `users` para saber el total de documentos de dicha colección:
-
-&amp;gt; db.users.count()
-5
-&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si introducimos más documentos de prueba, se aprecia que el contador total de documentos cambia:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.insert({firstName:&amp;quot;Paco&amp;quot;, lastName:&amp;quot;Laverdaque&amp;quot;, username: &amp;quot;laverdaque&amp;quot;, age: 40, city: &amp;quot;Madrid&amp;quot;})
-&amp;gt; db.users.insert({firstName:&amp;quot;Raul&amp;quot;, lastName:&amp;quot;Martin&amp;quot;, username: &amp;quot;rmartin&amp;quot;, age: 39, city: &amp;quot;Malaga&amp;quot;})
-&amp;gt; db.users.insert({firstName:&amp;quot;Jose&amp;quot;, lastName:&amp;quot;Castillo&amp;quot;, username: &amp;quot;lolo&amp;quot;, age: 25, city: &amp;quot;Cadiz&amp;quot;})
-&amp;gt; db.users.insert({firstName:&amp;quot;Jose Luis&amp;quot;, lastName:&amp;quot;Romero&amp;quot;, username: &amp;quot;selu&amp;quot;, age: 27, city: &amp;quot;Barcelona&amp;quot;})
-&amp;gt; 
-&amp;gt; db.users.count()
-5
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Pero no siempre vamos a querer recuperar todos los documentos de nuestra colección...&lt;/p&gt;
-&lt;h3 id="cmofiltrardocumentos"&gt;¿Cómo filtrar documentos?&lt;/h3&gt;
-&lt;p&gt;Seguro que muchos ya estáis pensando en la cláusula &lt;code&gt;WHERE&lt;/code&gt; de las sentencias SQL. Por ejemplo, si quisiéramos recuperar aquellos usuarios cuya ciudad es Sevilla, con una sentencia SQL sería:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; SELECT * FROM users WHERE city=&amp;quot;Sevilla&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Sin embargo, en MongoDB es de la siguiente forma:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.find({ city: &amp;quot;Sevilla&amp;quot; })
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;De esta forma, pasamos como parámetro un documento JSON con la cláusula a&lt;br&gt;
-cumplir, en este caso que la clave &lt;strong&gt;city&lt;/strong&gt; tenga como valor &lt;em&gt;Sevilla&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;¿Y cómo podemos concatenar cláusulas? Es decir, cómo sería si quisiéramos&lt;br&gt;
-recuperar aquellos usuarios cuya ciudad es Sevilla &lt;strong&gt;y&lt;/strong&gt; además su edad sea 26:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.find({ city: &amp;quot;Sevilla&amp;quot;, age: 26 })
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Como se puede observar, solamente se necesita agregar una segunda clave o campo al documento JSON que se le pasa al método &lt;code&gt;find()&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; MongoDB aplica por defecto un &lt;strong&gt;AND&lt;/strong&gt; entre cláusulas, es decir,&lt;br&gt;
-imaginaos que la coma (&lt;strong&gt;,&lt;/strong&gt;) es un operador &lt;strong&gt;AND&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Para utilizar un operador &lt;strong&gt;OR&lt;/strong&gt; deberemos usar el operador &lt;code&gt;$or&lt;/code&gt; de MongoDB, de la siguiente forma:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.find({ $or: [ {city:&amp;quot;Sevilla&amp;quot;}, {city:&amp;quot;Malaga&amp;quot;} ] })
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En este caso hemos recuperado aquellos usuarios cuya ciudad es Sevilla &lt;strong&gt;o&lt;/strong&gt; Málaga.&lt;/p&gt;
-&lt;p&gt;Podéis aprender más sobre operadores en &lt;a href="http://docs.mongodb.org/manual/reference/operators/"&gt;http://docs.mongodb.org/manual/reference/operators/&lt;/a&gt;.&lt;br&gt;
-Algunos de ellos son:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;$gt&lt;/code&gt;: mayor que (o &lt;em&gt;greater than&lt;/em&gt; en inglés).&lt;/li&gt;
-&lt;li&gt;`$lt: menor que (o &lt;em&gt;lower than&lt;/em&gt; en inglés).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$gte&lt;/code&gt;: mayor o igual que (o &lt;em&gt;greather or equal than&lt;/em&gt; en inglés).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$lte&lt;/code&gt;: menor o igual que (o &lt;em&gt;lower or equal than&lt;/em&gt; en inglés).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$not&lt;/code&gt;: no (negación o &lt;em&gt;not&lt;/em&gt; en inglés).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$in&lt;/code&gt;: en, para buscar dentro de un array.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$nin&lt;/code&gt;: no en, para buscar algo que no se encuentre en un determinado array (o &lt;em&gt;not in&lt;/em&gt; en inglés).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;$ne&lt;/code&gt;: no es igual a (o &lt;em&gt;not equal to&lt;/em&gt; en inglés).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Pero, no siempre vamos a querer recuperar todos los campos de un documento,&lt;br&gt;
-quizás solo necesitemos un algunos de ellos...&lt;/p&gt;
-&lt;h2 id="cmoseleccionarciertoscampos"&gt;¿Cómo seleccionar ciertos campos?&lt;/h2&gt;
-&lt;p&gt;Al igual que en una sentencia &lt;code&gt;SELECT&lt;/code&gt;, en una base de datos SQL, podemos&lt;br&gt;
-especificar qué determinados campos queremos obtener tras seleccionar los&lt;br&gt;
-documentos, en MongoDB también podemos hacerlo.&lt;/p&gt;
-&lt;p&gt;Hasta ahora hemos estado utilizando &lt;code&gt;find()&lt;/code&gt; como una sentencia SQL &lt;code&gt;SELECT *&lt;/code&gt;, es decir:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.find()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;es equivalente a&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; SELECT * FROM users;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Pero ¿y si lo que queremos es solamente recuperar los campos &lt;em&gt;username&lt;/em&gt; y&lt;br&gt;
-&lt;em&gt;age&lt;/em&gt;? En una sentencia SQL sería de la siguiente forma:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; SELECT username, age, city FROM users;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En cambio, en MongoDB sería de la siguiente forma:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.find({}, {username:1, age:1})
-{ &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;5131f87b350e650534c68d8e&amp;quot;), &amp;quot;username&amp;quot; : &amp;quot;mviera&amp;quot;, &amp;quot;age&amp;quot; : 26 }
-{ &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;5131fdc8350e650534c68d8f&amp;quot;), &amp;quot;username&amp;quot; : &amp;quot;laverdaque&amp;quot;, &amp;quot;age&amp;quot; : 40 }
-{ &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;5131fe00350e650534c68d90&amp;quot;), &amp;quot;username&amp;quot; : &amp;quot;rmartin&amp;quot;, &amp;quot;age&amp;quot; : 39 }
-{ &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;5131fe20350e650534c68d91&amp;quot;), &amp;quot;username&amp;quot; : &amp;quot;lolo&amp;quot;, &amp;quot;age&amp;quot; : 25 }
-{ &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;5131fe80350e650534c68d92&amp;quot;), &amp;quot;username&amp;quot; : &amp;quot;selu&amp;quot;, &amp;quot;age&amp;quot; : 27 }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Sin embargo, como podéis observar, aunque no hemos especificado el campo &lt;code&gt;_id&lt;/code&gt; sigue apareciendo en la salida. Como ya comenté en el anterior post, MongoDB siempre muestra el campo &lt;code&gt;_id&lt;/code&gt; a menos que especifiquemos explicitamente que no queramos que lo haga. Y sería de la siguiente forma:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.find( {}, { username:1, age:1, _id:0 })
-{ &amp;quot;username&amp;quot; : &amp;quot;mviera&amp;quot;, &amp;quot;age&amp;quot; : 26 }
-{ &amp;quot;username&amp;quot; : &amp;quot;laverdaque&amp;quot;, &amp;quot;age&amp;quot; : 40 }
-{ &amp;quot;username&amp;quot; : &amp;quot;rmartin&amp;quot;, &amp;quot;age&amp;quot; : 39 }
-{ &amp;quot;username&amp;quot; : &amp;quot;lolo&amp;quot;, &amp;quot;age&amp;quot; : 25 }
-{ &amp;quot;username&amp;quot; : &amp;quot;selu&amp;quot;, &amp;quot;age&amp;quot; : 27 }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En resumen, si analizamos la sintaxis del método &lt;code&gt;find()&lt;/code&gt;, primero se&lt;br&gt;
-especifica un documento JSON con las cláusulas del filtro que queremos aplicar y a continuación, si lo preferimos, podemos activar o desactivar cierto campos de la salida:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;1&lt;/strong&gt; : indica que queremos que muestre el campo especificado.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;0&lt;/strong&gt; : indica que no queremos que dicho campo se muestre en la salida.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="actualizandodatosdelosdocumentos"&gt;Actualizando datos de los documentos&lt;/h1&gt;
-&lt;p&gt;Una vez que somos capaces de introducir documentos en nuestra colección,&lt;br&gt;
-recuperarlos todos o aquellos que nos interesan utilizando una &lt;em&gt;query&lt;/em&gt; es hora de conocer cómo podemos actualizar los datos de nuestros documentos.&lt;/p&gt;
-&lt;p&gt;Para ello utilizaremos el método &lt;code&gt;update()&lt;/code&gt; cuya sintaxis es la siguiente:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.collection.update( &amp;lt;query&amp;gt;, &amp;lt;update&amp;gt;, options )
-&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;El parámetro &lt;code&gt;&amp;lt;query&amp;gt;&lt;/code&gt; hace referencia a una query como las que usabamos con el comando &lt;code&gt;find()&lt;/code&gt;, la cual nos permitirá seleccionar aquellos documentos los cuales queremos modificar. De otra forma, si no se especifica una query se estarían seleccionando todos los documentos de una colección.&lt;/li&gt;
-&lt;li&gt;El parámetro &lt;code&gt;&amp;lt;update&amp;gt;&lt;/code&gt; en el que podemos especificar un documento completo, que actualizará cada uno de los campos del documento seleccionado; o también podemos especificar solamente el campo del documento que queremos especificar, lo cual es más eficiente comparado con actualizar todos los campos del documento.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Y con respecto a las opciones podemos citar:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;upsert&lt;/code&gt;: si se establece este parámetro a &lt;strong&gt;true&lt;/strong&gt; y no hay documento que coincida con la &lt;code&gt;&amp;lt;query&amp;gt;&lt;/code&gt; especificada, el método &lt;code&gt;update()&lt;/code&gt; insertará un nuevo documento en la colección con los valores especificados en el parámetro &lt;code&gt;&amp;lt;update&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;multi&lt;/code&gt; : por defecto MongoDB solo actualiza un documento al mismo tiempo, si necesitamos actualizar más de un documento al mismo tiempo debemos establecer este parámetro a &lt;strong&gt;true&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="actualizarundocumentocompleto"&gt;Actualizar un documento completo&lt;/h2&gt;
-&lt;p&gt;Esta no es la forma más eficiente de actualizar el contenido de un documento, como comenté anteriormente, pues es necesario que se especifique el contenido completo del documento, y en caso de ser un documento muy grande puede llegar a ser bastante ineficiente, ya que tendra que actualizarse el valor de cada campo aunque no hay cambiado.&lt;/p&gt;
-&lt;p&gt;Imaginemos que queremos modificar un documento para cambiar solamente el valor del campo &lt;strong&gt;age&lt;/strong&gt; (edad). Tendríamos que realizar lo siguiente:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.update({ username: &amp;quot;rmartin&amp;quot; }, { &amp;quot;firstName&amp;quot; : &amp;quot;Raul&amp;quot;, &amp;quot;lastName&amp;quot; : &amp;quot;Martin&amp;quot;, &amp;quot;username&amp;quot; : &amp;quot;rmartin&amp;quot;, &amp;quot;age&amp;quot; : 40, &amp;quot;city&amp;quot; : &amp;quot;Malaga&amp;quot; } })
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Con esta instrucción hemos cambiado el valor del campo &lt;strong&gt;age&lt;/strong&gt; de 39 a 40, incluyendo los demás campos que serán actualizados con los mismos datos.&lt;/p&gt;
-&lt;p&gt;También es posible hacerlo de la siguiente forma para nuestra comodidad:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; user = db.users.findOne({ username:&amp;quot;rmartin&amp;quot; })
-{
-        &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;5131fe00350e650534c68d90&amp;quot;),
-        &amp;quot;firstName&amp;quot; : &amp;quot;Raul&amp;quot;,
-        &amp;quot;lastName&amp;quot; : &amp;quot;Martin&amp;quot;,
-        &amp;quot;username&amp;quot; : &amp;quot;rmartin&amp;quot;,
-        &amp;quot;age&amp;quot; : 39,
-        &amp;quot;city&amp;quot; : &amp;quot;Malaga&amp;quot;
-}
-&amp;gt; user.age 
-39
-&amp;gt; 
-&amp;gt; user.age = 40
-40
-&amp;gt; 
-&amp;gt; db.users.update({ username:&amp;quot;rmartin&amp;quot; }, user )
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ol&gt;
-&lt;li&gt;Recupero el documento completo referente al usuario cuyo &lt;em&gt;username&lt;/em&gt; es &lt;em&gt;rmartin&lt;/em&gt; y lo almaceno en la variable &lt;code&gt;user&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Compruebo el valor actual del campo &lt;em&gt;age&lt;/em&gt; accediendo al objeto &lt;code&gt;user&lt;/code&gt; haciendo uso del &lt;em&gt;dot notation&lt;/em&gt; (notación por punto: user.campo)&lt;/li&gt;
-&lt;li&gt;Modifico el valor del campo &lt;em&gt;age&lt;/em&gt; estableciéndolo a 40.&lt;/li&gt;
-&lt;li&gt;Utilizo el método &lt;code&gt;update()&lt;/code&gt; seleccionando de nuevo el mismo objeto que al principio (usando la misma query) e indico el nuevo documento a continuación, en este caso, almacenado en la variable &lt;code&gt;user&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="actualizandouncampoconcretodeundocumento"&gt;Actualizando un campo concreto de un documento&lt;/h2&gt;
-&lt;p&gt;Sin embargo, existe una alternativa mucho más eficiente para actualizar el&lt;br&gt;
-valor de ciertos campos en un documento. Para ello será necesario volver a&lt;br&gt;
-hacer uso de los operadores como los anteriormente citados. Algunos de estos son:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;$set&lt;/code&gt;: que permite establecer un nuevo valor a un campo del documento. Si el campo no existe actualmente en el documento, será creado automáticamente. Por ejemplo:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  &amp;gt; db.users.update({ age: 26, city: &amp;quot;Sevilla&amp;quot; }, { $set: { weight: 68.9 } })
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;En este caso se ha seleccionado un usuario cuya edad sea 26 y su ciudad&lt;br&gt;
-Sevilla, y se ha añadido el campo &lt;strong&gt;weight&lt;/strong&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;$addToSet&lt;/code&gt;: para añadir elementos un array. Por ejemplo, si quisieramos añadir un nuevo campo llamado &lt;em&gt;likes&lt;/em&gt; con los gustos de un usuario:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.update({ username:&amp;quot;mviera&amp;quot; }, {$addToSet: { likes: &amp;quot;photography&amp;quot; }})
-&amp;gt; db.users.update({ username:&amp;quot;mviera&amp;quot; }, {$addToSet: { likes: &amp;quot;music&amp;quot; }})
-&amp;gt;
-&amp;gt; db.users.findOne({ username: &amp;quot;mviera&amp;quot; })
-{
-    &amp;quot;_id&amp;quot; : ObjectId(&amp;quot;5131f87b350e650534c68d8e&amp;quot;),
-    &amp;quot;age&amp;quot; : 26,
-    &amp;quot;city&amp;quot; : &amp;quot;Sevilla&amp;quot;,
-    &amp;quot;firstName&amp;quot; : &amp;quot;Manuel&amp;quot;,
-    &amp;quot;lastName&amp;quot; : &amp;quot;Viera&amp;quot;,
-    &amp;quot;likes&amp;quot; : [
-            &amp;quot;photography&amp;quot;,
-            &amp;quot;music&amp;quot;
-    ],
-    &amp;quot;username&amp;quot; : &amp;quot;mviera&amp;quot;,
-    &amp;quot;weight&amp;quot; : 68.9
-}
-&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;$inc&lt;/code&gt;: permite incrementar el valor numérico de uno de los campos del documento. Por ejemplo, si quisieramos incrementar en 5 la edad del usuario &lt;em&gt;mviera&lt;/em&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  &amp;gt; db.users.update({ username:&amp;quot;mviera&amp;quot; }, {$inc: {age: 5}})
-  &amp;gt; db.users.find({ username: &amp;quot;mviera&amp;quot; }, {username: 1, age: 1, _id:0})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;{ &amp;quot;age&amp;quot; : 31, &amp;quot;username&amp;quot; : &amp;quot;mviera&amp;quot; }&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Para más información acerca de los operadores utilzados en el método &lt;code&gt;update()&lt;/code&gt; podéis consultar&lt;br&gt;
-&lt;a href="http://docs.mongodb.org/manual/applications/update/#update-operators"&gt;http://docs.mongodb.org/manual/applications/update/#update-operators&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="eliminandodocumentos"&gt;Eliminando documentos&lt;/h2&gt;
-&lt;p&gt;Para eliminar documentos de nuestra colección utilizaremos el método &lt;code&gt;remove()&lt;/code&gt; en la shell de MongoDB. Si ya sabes cómo utilizar el método &lt;code&gt;find()&lt;/code&gt; no supondrá ningún problema porque solamente requiere que se le especifique el filtro o búsqueda de los documentos que se quieren eliminar. Su sintaxis es la siguiente:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;db.collection.remove( &amp;lt;query&amp;gt;, &amp;lt;justOne&amp;gt; )
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;De forma que si queremos eliminar de la colección todos los usuarios cuya edad sea mayor a 30 utilizaríamos la siguiente instrucción:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.remove({ age: { $gt: 30 } })
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;El parámetro &lt;code&gt;justOne&lt;/code&gt; permite indicar al método &lt;code&gt;remove()&lt;/code&gt; si queremos&lt;br&gt;
-eliminar solamente un documento de todos los coincidentes. En ese caso, se debe pasar el valor &lt;em&gt;true&lt;/em&gt; o &lt;em&gt;1&lt;/em&gt;, de la siguiente forma:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.remove({ age: { $gt: 30 } }, true )
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Es posible utilizar el método &lt;code&gt;remove()&lt;/code&gt; para eliminar todos los documentos de una colección si no se especifica una query o si ésta está vacía, es decir, &lt;code&gt;db.users.remove({})&lt;/code&gt;. Pero en este caso, si queremos eliminar todos los documentos de una colección, es recomendable utilizar el método &lt;code&gt;drop()&lt;/code&gt;, que &lt;strong&gt;elimina la colección completa&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.users.drop()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;¡Y eso es todo! Espero que os haya sido útil y por lo menos hayáis aprendido algo nuevo. Intentaré seguir escribiendo sobre MongoDB, ahora que ya conocemos lo básico.&lt;/p&gt;
 &lt;p&gt;Un saludo,&lt;br&gt;
 Manu.&lt;/p&gt;
 &lt;!--kg-card-end: markdown--&gt;</content:encoded></item></channel></rss>
