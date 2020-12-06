@@ -1,4 +1,29 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Manuel Viera</title><description>I'm Manu and this is my personal lifelog. Here you'll find some tech posts, self-tracking metrics and other random thoughts.</description><link>http://manuelviera.com/</link><image><url>http://manuelviera.com/favicon.png</url><title>Manuel Viera</title><link>http://manuelviera.com/</link></image><generator>Ghost 3.19</generator><lastBuildDate>Fri, 06 Nov 2020 18:37:30 GMT</lastBuildDate><atom:link href="http://manuelviera.com/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Media consumption in October 2020</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;ul&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Manuel Viera</title><description>I'm Manu and this is my personal lifelog. Here you'll find some tech posts, self-tracking metrics and other random thoughts.</description><link>http://manuelviera.com/</link><image><url>http://manuelviera.com/favicon.png</url><title>Manuel Viera</title><link>http://manuelviera.com/</link></image><generator>Ghost 3.19</generator><lastBuildDate>Sun, 06 Dec 2020 13:52:11 GMT</lastBuildDate><atom:link href="http://manuelviera.com/blog/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Media consumption in November 2020</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;ul&gt;
+&lt;li&gt;Read 3 books &lt;output&gt;(4h 23min)&lt;/output&gt; and 14 articles.&lt;/li&gt;
+&lt;li&gt;Watched 2 movies &lt;output&gt;(3h 23min)&lt;/output&gt;, 6 TV episodes &lt;output&gt;(5h 16min)&lt;/output&gt; and 0 talks &lt;output&gt;(0min)&lt;/output&gt;.&lt;/li&gt;
+&lt;li&gt;Listened to 0 podcasts episodes &lt;output&gt;(N min)&lt;/output&gt;.&lt;/li&gt;
+&lt;li&gt;Played 2 video games &lt;output&gt;(7h 30min)&lt;/output&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="books"&gt;Books&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://www.amazon.es/How-English-Days-independent-learner-ebook/dp/B07V6F52X1/"&gt;How To English: 31 Days to be an independent learner&lt;/a&gt; &lt;output&gt;(Adam David Broughton)&lt;/output&gt;&lt;br&gt;
+░░░▓▓▓▓░░░░░░░░ &lt;output&gt;Progress:&lt;/output&gt;&lt;/p&gt;</description><link>http://manuelviera.com/blog/media-consumption-in-november-2020/</link><guid isPermaLink="false">5fccdcbbf697444ca5856dfb</guid><category>self-tracking</category><dc:creator>Manuel Viera</dc:creator><pubDate>Sun, 06 Dec 2020 13:51:53 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;ul&gt;
+&lt;li&gt;Read 3 books &lt;output&gt;(4h 23min)&lt;/output&gt; and 14 articles.&lt;/li&gt;
+&lt;li&gt;Watched 2 movies &lt;output&gt;(3h 23min)&lt;/output&gt;, 6 TV episodes &lt;output&gt;(5h 16min)&lt;/output&gt; and 0 talks &lt;output&gt;(0min)&lt;/output&gt;.&lt;/li&gt;
+&lt;li&gt;Listened to 0 podcasts episodes &lt;output&gt;(N min)&lt;/output&gt;.&lt;/li&gt;
+&lt;li&gt;Played 2 video games &lt;output&gt;(7h 30min)&lt;/output&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="books"&gt;Books&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://www.amazon.es/How-English-Days-independent-learner-ebook/dp/B07V6F52X1/"&gt;How To English: 31 Days to be an independent learner&lt;/a&gt; &lt;output&gt;(Adam David Broughton)&lt;/output&gt;&lt;br&gt;
+░░░▓▓▓▓░░░░░░░░ &lt;output&gt;Progress: 0-46%&lt;/output&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.amazon.es/Los-pelda%C3%B1os-del-%C3%A9xito-COLECCION/dp/8416928185/"&gt;Los 88 Peldaños del Éxito&lt;/a&gt; &lt;output&gt;(Anxo Pérez Rodríguez)&lt;/output&gt;&lt;br&gt;
+░░░░▓▓░░░░░░░░░ &lt;output&gt;Progress: 0-36%&lt;/output&gt;&lt;/p&gt;
+&lt;h4 id="recommendedarticles"&gt;Recommended articles&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://relocate.me/blog/resume-interview-tips/10-data-driven-ways-to-use-your-developer-resume-to-get-interviews/"&gt;10 Data-Driven Ways to Use Your Developer Resume to Get Interviews&lt;/a&gt; &lt;output&gt;(Relocate)&lt;/output&gt;&lt;br&gt;
+&lt;a href="https://lwn.net/Articles/835962/"&gt;Deprecating scp&lt;/a&gt; &lt;output&gt;(Jonathan Corbet)&lt;/output&gt;&lt;br&gt;
+&lt;a href="https://keleshev.com/my-book-writing-setup/"&gt;Writing a Book with Pandoc, Make, and Vim&lt;/a&gt; &lt;output&gt;(Vladimir Keleshev)&lt;/output&gt;&lt;br&gt;
+&lt;a href="https://todoist.com/productivity-methods/eat-the-frog"&gt;Eat the Frog&lt;/a&gt; &lt;output&gt;(Becky Kane / todoist.com)&lt;/output&gt;&lt;br&gt;
+&lt;a href="https://blog.doist.com/quantified-self-apps/"&gt;Quantify Yourself: (Mostly) Free Tools &amp;amp; Strategies to Track (Almost) Every Area of Your Life&lt;/a&gt; &lt;output&gt;(Willian Molinari / todoist)&lt;/output&gt;&lt;/p&gt;
+&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Media consumption in October 2020</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;ul&gt;
 &lt;li&gt;Read 3 books &lt;output&gt;(6h 32min)&lt;/output&gt; and 12 articles.&lt;/li&gt;
 &lt;li&gt;Watched 2 movies &lt;output&gt;(3h 25min)&lt;/output&gt;, 8 TV episodes &lt;output&gt;(6h 38min)&lt;/output&gt; and 1 talks &lt;output&gt;(1h)&lt;/output&gt;.&lt;/li&gt;
 &lt;li&gt;Listened to 0 podcasts episodes &lt;output&gt;(0 min)&lt;/output&gt;.&lt;/li&gt;
@@ -619,113 +644,5 @@ trabajo actualmente, y en la que pretendo seguir durante más tiempo. Así quier
 &lt;p&gt;También, de un año hacia acá, he aprendido muchisimo sobre Cloud, y en concreto estamos especializándonos en AWS (Amazon Web Services). Espero no volver a abandonar este blog durante un tiempo de nuevo, porque me gustaría compartir mis conocimientos de AWS. ¡Hay muchas cosas interesantes!&lt;/p&gt;
 &lt;p&gt;No me enrrollo más. Este post es un poco para &amp;quot;romper el hielo&amp;quot; y convencerme a mí mismo, de que tengo que dedicar parte de mi tiempo a exportar conocimiento aquí. Espero escribir pronto de nuevo.&lt;/p&gt;
 &lt;p&gt;¡Nos leemos!&lt;br&gt;
-Manu.&lt;/p&gt;
-&lt;!--kg-card-end: markdown--&gt;</content:encoded></item><item><title>Instalar Solr en Jetty</title><description>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;Hace ya más de un mes que no pasaba por aquí más que para ver las estadísticas del blog; así que ya es hora de que me siente a escribir algo y compartir con el resto de internet.&lt;/p&gt;
-&lt;p&gt;Hoy vengo hablando, o escribiendo, sobre cómo instalar / montar una instancia de&lt;/p&gt;</description><link>http://manuelviera.com/blog/instalar-solr-en-jetty/</link><guid isPermaLink="false">5ee647a546e19912dcb41657</guid><category>tech</category><dc:creator>Manuel Viera</dc:creator><pubDate>Mon, 29 Apr 2013 00:00:00 GMT</pubDate><content:encoded>&lt;!--kg-card-begin: markdown--&gt;&lt;p&gt;Hace ya más de un mes que no pasaba por aquí más que para ver las estadísticas del blog; así que ya es hora de que me siente a escribir algo y compartir con el resto de internet.&lt;/p&gt;
-&lt;p&gt;Hoy vengo hablando, o escribiendo, sobre cómo instalar / montar una instancia de Solr sobre Jetty, porque esta semana pasada me surgió la necesidad de montar una instancia y hemos tenido que pelear un poco para hacerlo, así que he decidido crear una receta muy simple para tenerlo funcionando rápidamente y siguiendo unos pasos muy sencillos. Pero empecemos por el principio...&lt;/p&gt;
-&lt;!--more--&gt;
-&lt;h2 id="quessolr"&gt;¿Qué es Solr?&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://lucene.apache.org/solr/"&gt;Solr&lt;/a&gt; es la plataforma de búsqueda de código abierto del proyecto Apache Lucene. Es una plataforma de búsqueda muy popular y rápida; está escrita en Java y se ejecuta de forma independiente dentro de un servidor de aplicaciones como pueder ser &lt;a href="http://tomcat.apache.org/"&gt;Tomcat&lt;/a&gt; o &lt;a href="http://www.eclipse.org/jetty/"&gt;Jetty&lt;/a&gt;. Podéis encontrar mucha más información&lt;br&gt;
-de Sorl en su &lt;a href="http://lucene.apache.org/solr/"&gt;página oficial&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="preparativos"&gt;Preparativos&lt;/h2&gt;
-&lt;p&gt;Antes de empezar con la instalación de Solr necesitamos tener instalados varios paquetes en nuestro sistema. En mi caso, y a la hora de escribir este post, estoy utilizando una distribución Ubuntu; y muchos pensaréis que es tan fácil como hacer un &lt;code&gt;apt-get install solr-jetty solr-common&lt;/code&gt; pero mi necesidad surgió en una distribución Debian Squeeze, y no contaba con Solr en mi sistema de paquetería. De todas formas, este post tiene como fin poder instalar un Solr sin necesidad de utilizar el sistema de paquetería de nuestra distribución y poder utilizar una versión más nueva de Solr que la empaquetada en esta. Así que necesitaremos:&lt;/p&gt;
-&lt;h3 id="java"&gt;Java&lt;/h3&gt;
-&lt;p&gt;Necesitaremos la máquina virtual de Java para poder ejecutar Solr dentro de&lt;br&gt;
-nuestro contenedor de aplicaciones Jetty. Podemos buscar el paquete referente a &lt;strong&gt;openjdk&lt;/strong&gt; en nuestra distribución. En mi caso, tengo instalado varios paquetes referentes a &lt;strong&gt;openjdk-7&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ dpkg -l |grep openjdk |awk '{print $2}'
-openjdk-7-jre:amd64
-openjdk-7-jre-headless:amd64
-openjdk-7-jre-lib
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Para comprobar que tenemos &lt;strong&gt;java&lt;/strong&gt; correctamente instalado y&lt;br&gt;
-conocer la versión que vamos a utilizar podemos ejecutar la siguiente&lt;br&gt;
-instrucción:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ java -version
-java version &amp;quot;1.7.0_21&amp;quot;
-Java(TM) SE Runtime Environment (build 1.7.0_21-b11)
-Java HotSpot(TM) 64-Bit Server VM (build 23.21-b01, mixed mode)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="jetty"&gt;Jetty&lt;/h3&gt;
-&lt;p&gt;Instalaremos el servidor de aplicaciones Jetty utilizando nuestro sistema de paquetería igual que hemos hecho con Java. Así que en distribuciones basadas en Debian utilizaremos la siguiente instrucción para su instalación:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo apt-get install jetty libjetty-extra
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id="solr"&gt;Solr&lt;/h3&gt;
-&lt;p&gt;Como he comentado antes, en este caso no vamos a instalar Solr desde el sistema de paquetería, pues yo no tuve esa posibilidad y mi intención es compartir la forma de hacerlo de que exista un paquete en los repositorios, como era mi caso.&lt;/p&gt;
-&lt;h4 id="descargarydescomprimirsolr"&gt;Descargar y descomprimir Solr&lt;/h4&gt;
-&lt;p&gt;Descargaremos y descomprimiremos la última versión disponible de Solr en este momento, la versión 4.2.1:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ cd /opt
-$ sudo wget http://apache.rediris.es/lucene/solr/4.2.1/solr-4.2.1.tgz
-$ tar xzf solr-4.2.1.tgz &amp;amp;amp;&amp;amp;amp; mv solr-4.2.1 solr
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Crearemos el directorio &lt;code&gt;/usr/share/solr&lt;/code&gt; y descomprimiremos dentro de él el contenido de &lt;code&gt;dist/solr-4.2.1.war&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo mkdir /usr/share/solr
-$ cd /usr/share/solr
-$ sudo unzip /opt/solr/dist/solr-4.2.1.war
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Esta última instrucción descomprime los ficheros web de Solr en el directorio &lt;code&gt;/usr/share/solr&lt;/code&gt; teniendo este el siguiente contenido:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ ls
-admin.html  css  favicon.ico  img  js  META-INF  mgc  solr.xml  tpl  WEB-INF
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="aadiendosolrajetty"&gt;Añadiendo Solr a Jetty&lt;/h4&gt;
-&lt;p&gt;Para instalar Solr como aplicación dentro de Jetty, crearemos un enlace&lt;br&gt;
-simbólico de &lt;code&gt;/usr/share/solr&lt;/code&gt; en &lt;code&gt;/usr/share/jetty/webapps&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo ln -s /usr/share/solr /usr/share/jetty/webbaps/solr
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;NOTA:&lt;/strong&gt; &lt;code&gt;/usr/share/jetty&lt;/code&gt; es el directorio donde se encuentra instalado&lt;br&gt;
-Jetty en nuestra distribución. Puedes consultarlo ejecutando: &lt;code&gt;dpkg -L jetty&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Esto quiere decir que nuestra instancia de Solr va a ser accesible en&lt;br&gt;
-&lt;a href="http://localhost:8080/solr"&gt;http://localhost:8080/solr&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id="configurandojetty"&gt;Configurando Jetty&lt;/h4&gt;
-&lt;p&gt;Editaremos el fichero &lt;code&gt;/etc/default/jetty&lt;/code&gt; a través del cual podremos modificar el comportamiento de éste sin necesidad de modificar sus ficheros de configuración XML.&lt;/p&gt;
-&lt;p&gt;En mi caso he incluido las siguientes lineas:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;NO_START=0
-VERBOSE=yes
-JETTY_PORT=8080
-JETTY_HOST=0.0.0.0
-JAVA_OPTIONS=&amp;quot;-Dsolr.solr.home=/usr/share/solr $JAVA_OPTIONS&amp;quot;
-JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;NO_START=0&lt;/strong&gt;: permite que Jetty se ejecute. Si el valor es 1, Jetty no podrá ejecutarse.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;VERBOSE=yes&lt;/strong&gt;: indica a Jetty que queremos que nos muestra mucha más información durante su ejecución. Muy recomendable sobre todo cuando se intenta depurar un error.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;JETTY_PORT=8080&lt;/strong&gt;: puerto en el que escuchará Jetty. En este caso se utiliza el puerto por defecto, pero se puede establecer cualquier otro siempre y cuand o no se encuentra ya en uso en el sistema.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;JETTY_HOST=0.0.0.0&lt;/strong&gt;: indica a Jetty que escuche en todas las interfaces de red y no solo en localhost. Aunque es recomendable que escuche solo en localhost, sobre todo si se encuentra instalada en el mismo servidor donde se encuentra la aplicación.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;JAVA_OPTIONS&lt;/strong&gt;: opciones y parámetros que se pueden pasar a la máquina virtual de Java.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;JAVA_HOME&lt;/strong&gt;: indica el directorio HOME de la máquina virtual de Java. Es posible descubrirlo ejecutando &lt;code&gt;dpkg -L openjdk-7-jre&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id="aadiendocoresasolr"&gt;Añadiendo Cores a Solr&lt;/h4&gt;
-&lt;p&gt;Es necesario configurar al menos un &lt;strong&gt;Core&lt;/strong&gt; en Solr para que podamos hacer uso de él, así que editaremos el fichero &lt;code&gt;/usr/share/solr/solr.xml&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo vim /usr/share/solr/solr.xml
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;y añadiremos algo como lo siguiente:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;solr persistent=&amp;quot;true&amp;quot;&amp;gt;
-    &amp;lt;cores adminPath=&amp;quot;/admin/cores&amp;quot;&amp;gt;
-    &amp;lt;core name=&amp;quot;mysitename&amp;quot; instanceDir=&amp;quot;mysitename&amp;quot; dataDir=&amp;quot;/var/lib/solr/mysitename/data&amp;quot; /&amp;gt;
-    &amp;lt;/cores&amp;gt;
-&amp;lt;/solr&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Esto añade un &lt;strong&gt;Core&lt;/strong&gt; llamado &lt;strong&gt;mysitename&lt;/strong&gt;. Ahora crearemos el directorio del &lt;strong&gt;Core&lt;/strong&gt; que acabamos de configurar:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo mkdir -p /var/lib/solr/mysitename/data
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Y establecemos &lt;strong&gt;jetty&lt;/strong&gt; como propietario y grupo a los directorios&lt;br&gt;
-&lt;code&gt;/var/lib/solr&lt;/code&gt; &lt;code&gt;/usr/share/solr&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo chown -R jetty:jetty /var/lib/solr/
-$ sudo chown -R jetty:jetty /usr/share/solr
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="configurandoelcore"&gt;Configurando el Core&lt;/h4&gt;
-&lt;p&gt;Tal y como hemos hecho antes, tenemos que crear el directorio que alojará la configuración para el Core &lt;strong&gt;mysitename&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo mkdir -p /usr/share/solr/mysitename
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Y si aún no tenemos una configuración disponible, podemos copiar la&lt;br&gt;
-configuración de ejemplo que viene incluida con Solr y que se encuentra en el directorio &lt;code&gt;example&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo cp -r /opt/solr/example/solr/collection1/conf/ /usr/share/solr/mysitename/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id="reiniciarjetty"&gt;Reiniciar Jetty&lt;/h4&gt;
-&lt;p&gt;Por último y para terminar solo nos quedaría reiniciar el servido Jetty:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo service jetty restart
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si todo va bien, Solr debería estar accesible en &lt;a href="http://localhost:8080/solr"&gt;http://localhost:8080/solr&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Y esto es todo! Espero que os sirva de ayuda, a mi seguro que me va a ser muy útil cuando tenga que montar un Solr de nuevo.&lt;/p&gt;
-&lt;p&gt;Un saludo,&lt;br&gt;
 Manu.&lt;/p&gt;
 &lt;!--kg-card-end: markdown--&gt;</content:encoded></item></channel></rss>
