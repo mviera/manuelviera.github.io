@@ -2987,7 +2987,7 @@ body:not(.paged-next) .infinite-scroll-button {
   color: #eaa700;
   font-weight: bold;
 }
-.u-text-format p a[href^="http://manuelviera.com"],
+.u-text-format p a[href^="https://manuelviera.com"],
 .u-text-format p a[href^="http://manuelviera.com"],
 .u-text-format p a[href^="https://manuelviera.com"] {
   font-family: monospace;
@@ -3230,7 +3230,7 @@ time {
   font-weight: bold;
 }
 
-.theme-dark .u-text-format p a[href^="http://manuelviera.com"],
+.theme-dark .u-text-format p a[href^="https://manuelviera.com"],
 .theme-dark .u-text-format p a[href^="http://manuelviera.com"],
 .theme-dark .u-text-format p a[href^="https://manuelviera.com"] {
   font-family: monospace;

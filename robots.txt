@@ -1,4 +1,4 @@
 User-agent: *
-Sitemap: http://manuelviera.com/sitemap.xml
+Sitemap: https://manuelviera.com/sitemap.xml
 Disallow: /ghost/
 Disallow: /p/

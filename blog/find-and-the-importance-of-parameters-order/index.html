@@ -1,13 +1,14 @@
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Find and the importance of parameters order</title>
-  <link rel="stylesheet" href="../../assets/css/screen.css?v=e156b8919a">
+  <link rel="stylesheet" href="/assets/css/screen.css?v=67116d8245">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800">
 
   <script>
-    var siteUrl = 'http://manuelviera.com';
+    var siteUrl = 'https://manuelviera.com';
   </script>
   <script>
   var themeOptions = {
@@ -32,34 +33,34 @@
     }
   </script>
 
-  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="index.html">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <link rel="amphtml" href="amp/index.html">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://manuelviera.com/blog/find-and-the-importance-of-parameters-order/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="https://manuelviera.com/blog/find-and-the-importance-of-parameters-order/amp/" />
     
-    <meta property="og:site_name" content="Manuel Viera">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Find and the importance of parameters order">
-    <meta property="og:description" content="Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it.">
-    <meta property="og:url" content="http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
-    <meta property="article:published_time" content="2020-08-10T14:53:00.000Z">
-    <meta property="article:modified_time" content="2020-09-13T17:21:17.000Z">
-    <meta property="article:tag" content="tech">
+    <meta property="og:site_name" content="Manuel Viera" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Find and the importance of parameters order" />
+    <meta property="og:description" content="Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it." />
+    <meta property="og:url" content="https://manuelviera.com/blog/find-and-the-importance-of-parameters-order/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ" />
+    <meta property="article:published_time" content="2020-08-10T14:53:00.000Z" />
+    <meta property="article:modified_time" content="2020-09-13T17:21:17.000Z" />
+    <meta property="article:tag" content="tech" />
     
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Find and the importance of parameters order">
-    <meta name="twitter:description" content="Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it.">
-    <meta name="twitter:url" content="http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ">
-    <meta name="twitter:label1" content="Written by">
-    <meta name="twitter:data1" content="Manuel Viera">
-    <meta name="twitter:label2" content="Filed under">
-    <meta name="twitter:data2" content="tech">
-    <meta name="twitter:site" content="@mviera">
-    <meta name="twitter:creator" content="@mviera">
-    <meta property="og:image:width" content="2000">
-    <meta property="og:image:height" content="1333">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Find and the importance of parameters order" />
+    <meta name="twitter:description" content="Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it." />
+    <meta name="twitter:url" content="https://manuelviera.com/blog/find-and-the-importance-of-parameters-order/" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Manuel Viera" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="tech" />
+    <meta name="twitter:site" content="@mviera" />
+    <meta name="twitter:creator" content="@mviera" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="1333" />
     
     <script type="application/ld+json">
 {
@@ -68,10 +69,10 @@
     "publisher": {
         "@type": "Organization",
         "name": "Manuel Viera",
-        "url": "http://manuelviera.com/",
+        "url": "https://manuelviera.com/",
         "logo": {
             "@type": "ImageObject",
-            "url": "http://manuelviera.com/favicon.ico",
+            "url": "https://manuelviera.com/favicon.ico",
             "width": 48,
             "height": 48
         }
@@ -81,18 +82,18 @@
         "name": "Manuel Viera",
         "image": {
             "@type": "ImageObject",
-            "url": "http://manuelviera.com/content/images/2020/06/2020-06-22-161222_428x430_scrot.png",
+            "url": "https://manuelviera.com/content/images/2020/06/2020-06-22-161222_428x430_scrot.png",
             "width": 428,
             "height": 430
         },
-        "url": "http://manuelviera.com/author/mviera/",
+        "url": "https://manuelviera.com/author/mviera/",
         "sameAs": [
             "https://manuelviera.com",
             "https://twitter.com/mviera"
         ]
     },
     "headline": "Find and the importance of parameters order",
-    "url": "http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/",
+    "url": "https://manuelviera.com/blog/find-and-the-importance-of-parameters-order/",
     "datePublished": "2020-08-10T14:53:00.000Z",
     "dateModified": "2020-09-13T17:21:17.000Z",
     "image": {
@@ -105,92 +106,92 @@
     "description": "Parameter order matters. Especially in commands such as find. This post covers a common problem using find when deleting files and some tips to avoid it.",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://manuelviera.com/"
+        "@id": "https://manuelviera.com/"
     }
 }
     </script>
 
-    <meta name="generator" content="Ghost 3.19">
-    <link rel="alternate" type="application/rss+xml" title="Manuel Viera" href="../rss/index.html">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&amp;display=swap">
+    <meta name="generator" content="Ghost 3.19" />
+    <link rel="alternate" type="application/rss+xml" title="Manuel Viera" href="https://manuelviera.com/blog/rss/" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap">
 </head>
 <body class="post-template tag-tech">
   <svg width="0" height="0" style="display: none;">
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="arrow-left">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="arrow-left">
     <title>arrow-left</title>
     <path d="M26.667 14.667v2.667h-16L18 24.667l-1.893 1.893L5.547 16l10.56-10.56L18 7.333l-7.333 7.333h16z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="arrow-right">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="arrow-right">
     <title>arrow-right</title>
     <path d="M5.333 14.667v2.667h16L14 24.667l1.893 1.893L26.453 16 15.893 5.44 14 7.333l7.333 7.333h-16z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="brightness-2">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="brightness-2">
     <title>brightness-2</title>
     <path d="M13.333 2.667c-2.427 0-4.707.667-6.667 1.8 4 2.307 6.667 6.6 6.667 11.533s-2.667 9.227-6.667 11.533c1.96 1.133 4.24 1.8 6.667 1.8 7.36 0 13.333-5.973 13.333-13.333S20.693 2.667 13.333 2.667z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="chevron-left">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="chevron-left">
     <title>chevron-left</title>
     <path d="M20.547 22.107L14.44 16l6.107-6.12L18.667 8l-8 8 8 8 1.88-1.893z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="chevron-right">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="chevron-right">
     <title>chevron-right</title>
     <path d="M11.453 22.107L17.56 16l-6.107-6.12L13.333 8l8 8-8 8-1.88-1.893z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="circle-half-full">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="circle-half-full">
     <title>circle-half-full</title>
     <path d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333s5.973 13.333 13.333 13.333c7.36 0 13.333-5.973 13.333-13.333s-5.973-13.333-13.333-13.333zM16 5.333c5.893 0 10.667 4.773 10.667 10.667s-4.773 10.667-10.667 10.667v-21.333z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="dots-horizontal">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="dots-horizontal">
     <title>dots-horizontal</title>
     <path d="M21.333 16c0-1.473 1.194-2.667 2.667-2.667v0c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0zM13.333 16c0-1.473 1.194-2.667 2.667-2.667v0c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0zM5.333 16c0-1.473 1.194-2.667 2.667-2.667v0c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="facebook-box">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="facebook-box">
     <title>facebook-box</title>
     <path d="M6.667 4h18.667c1.467 0 2.667 1.2 2.667 2.667v18.667c0 1.467-1.2 2.667-2.667 2.667H6.667A2.675 2.675 0 0 1 4 25.334V6.667C4 5.2 5.2 4 6.667 4zM24 6.667h-3.333A4.672 4.672 0 0 0 16 11.334v3.333h-2.667v4H16V28h4v-9.333h4v-4h-4V12c0-.733.6-1.333 1.333-1.333H24v-4z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="facebook">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="facebook">
     <title>facebook</title>
     <path d="M22.667 2.667V8H20c-.92 0-1.333 1.08-1.333 2v3.333h4v5.333h-4v10.667h-5.333V18.666h-4v-5.333h4V8a5.332 5.332 0 0 1 5.333-5.333h4z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 40 40" id="loader">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="loader">
     <title>loader</title>
-    <path opacity="0.3" fill="currentColor" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"></path>
+    <path opacity="0.3" fill="currentColor" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
     <path fill="currentColor" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0 C22.32,8.481,24.301,9.057,26.013,10.047z">
-      <animatetransform attributetype="xml" attributename="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatcount="indefinite"></animatetransform>
+      <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite" />
     </path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="magnify">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="magnify">
     <title>magnify</title>
     <path d="M12.667 4a8.667 8.667 0 0 1 8.667 8.667c0 2.147-.787 4.12-2.08 5.64l.36.36h1.053l6.667 6.667-2 2-6.667-6.667v-1.053l-.36-.36a8.689 8.689 0 0 1-5.64 2.08C7.88 21.334 4 17.454 4 12.667S7.88 4 12.667 4zm0 2.667c-3.333 0-6 2.667-6 6s2.667 6 6 6 6-2.667 6-6-2.667-6-6-6z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="menu-down">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="menu-down">
     <title>menu-down</title>
     <path d="M9.333 13.333L16 20l6.667-6.667H9.334z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="rss-box">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="rss-box">
     <title>rss-box</title>
     <path d="M6.667 4h18.667c1.467 0 2.667 1.2 2.667 2.667v18.667c0 1.467-1.2 2.667-2.667 2.667H6.667A2.675 2.675 0 0 1 4 25.334V6.667C4 5.2 5.2 4 6.667 4zM10 20c-1.107 0-2 .893-2 2s.893 2 2 2 2-.893 2-2-.893-2-2-2zm-2-6.667V16c4.413 0 8 3.587 8 8h2.667c0-5.893-4.773-10.667-10.667-10.667zM8 8v2.667c7.36 0 13.333 5.973 13.333 13.333H24c0-8.84-7.16-16-16-16z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="star">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">
     <title>star</title>
     <path d="M16 23.027L24.24 28l-2.187-9.373 7.28-6.307-9.587-.827-3.747-8.827-3.747 8.827-9.587.827 7.267 6.307L7.759 28l8.24-4.973z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" id="table-of-contents">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="table-of-contents">
     <path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="twitter-box">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="twitter-box">
     <title>twitter-box</title>
     <path d="M6.667 4h18.667c1.467 0 2.667 1.2 2.667 2.667v18.667c0 1.467-1.2 2.667-2.667 2.667H6.667A2.675 2.675 0 0 1 4 25.334V6.667C4 5.2 5.2 4 6.667 4zm16.946 8.44c.64-.533 1.387-1.173 1.72-1.88-.547.28-1.2.453-1.92.547.667-.48 1.213-1.107 1.493-1.96-.693.373-1.4.693-2.28.853-2.067-2.493-7.013-.467-6.133 3.267-3.48-.213-5.6-1.787-7.36-3.72-1 1.627-.133 4.093 1.053 4.773-.613-.04-1.08-.227-1.52-.44.053 2.053 1.187 3.04 2.773 3.573a4.47 4.47 0 0 1-1.52.04c.493 1.427 1.52 2.32 3.28 2.507-1.2 1.013-3.413 1.72-5.2 1.44 1.533.973 3.28 1.747 5.707 1.64 5.88-.267 9.813-4.48 9.907-10.64z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="twitter">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="twitter">
     <title>twitter</title>
     <path d="M29.947 8a11.423 11.423 0 0 1-3.28.92 5.738 5.738 0 0 0 2.507-3.173 11.52 11.52 0 0 1-3.627 1.4C24.494 6 23.014 5.334 21.334 5.334c-3.133 0-5.693 2.56-5.693 5.72 0 .453.053.893.147 1.307A16.261 16.261 0 0 1 4.001 6.388a5.663 5.663 0 0 0-.773 2.867c0 1.987 1 3.747 2.547 4.747-.947 0-1.827-.267-2.6-.667v.04a5.724 5.724 0 0 0 4.587 5.613 5.644 5.644 0 0 1-2.574.093c.72 2.253 2.813 3.933 5.333 3.973-1.947 1.547-4.413 2.453-7.107 2.453-.453 0-.907-.027-1.36-.08A16.19 16.19 0 0 0 10.827 28c10.507 0 16.28-8.72 16.28-16.28 0-.253 0-.493-.013-.747A11.42 11.42 0 0 0 29.947 8z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="white-balance-sunny">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="white-balance-sunny">
     <title>white-balance-sunny</title>
     <path d="M4.733 24.72l1.88 1.88 2.4-2.387L7.12 22.32zm9.934 5.213h2.667V26h-2.667zM16 7.333c-4.413 0-8 3.587-8 8s3.587 8 8 8 8-3.587 8-8c0-4.427-3.587-8-8-8zm10.667 9.334h4V14h-4zm-3.68 7.546l2.4 2.387 1.88-1.88-2.387-2.4zm4.28-18.266l-1.88-1.88-2.4 2.387 1.893 1.893zM17.333.733h-2.667v3.933h2.667zM5.333 14h-4v2.667h4zm3.68-7.547l-2.4-2.387-1.88 1.88 2.387 2.4 1.893-1.893z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32" id="window-close">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="window-close">
     <title>window-close</title>
     <path d="M17.947 16l7.387 7.387v1.947h-1.947L16 17.947l-7.387 7.387H6.666v-1.947L14.053 16 6.666 8.613V6.666h1.947L16 14.053l7.387-7.387h1.947v1.947L17.947 16z"></path>
   </symbol>
@@ -198,15 +199,15 @@
     <div class="site">
       <header class="site-header">
   <div class="header-left">
-    <a class="logo" href="../../">
+    <a class="logo" href="https://manuelviera.com">
         <span class="logo-text">Manuel Viera</span>
     </a>
   </div>
     <nav class="main-nav hidden-xs hidden-sm hidden-md">
-        <a class="menu-item menu-item-about" href="../../about/">about</a>
-  <a class="menu-item menu-item-tech" href="../../tag/tech/">tech</a>
-  <a class="menu-item menu-item-self-tracking" href="../../tag/self-tracking/">self-tracking</a>
-  <a class="menu-item menu-item-author" href="../../author/mviera/">author</a>
+        <a class="menu-item menu-item-about" href="https://manuelviera.com/about/">about</a>
+  <a class="menu-item menu-item-tech" href="https://manuelviera.com/tag/tech/">tech</a>
+  <a class="menu-item menu-item-self-tracking" href="https://manuelviera.com/tag/self-tracking/">self-tracking</a>
+  <a class="menu-item menu-item-author" href="https://manuelviera.com/author/mviera/">author</a>
 
     </nav>
     
@@ -221,10 +222,10 @@
     <div class="mobile-menu hidden-lg hidden-xl">
       <div class="container">
         <nav class="mobile-nav">
-            <a class="menu-item menu-item-about" href="../../about/">about</a>
-  <a class="menu-item menu-item-tech" href="../../tag/tech/">tech</a>
-  <a class="menu-item menu-item-self-tracking" href="../../tag/self-tracking/">self-tracking</a>
-  <a class="menu-item menu-item-author" href="../../author/mviera/">author</a>
+            <a class="menu-item menu-item-about" href="https://manuelviera.com/about/">about</a>
+  <a class="menu-item menu-item-tech" href="https://manuelviera.com/tag/tech/">tech</a>
+  <a class="menu-item menu-item-self-tracking" href="https://manuelviera.com/tag/self-tracking/">self-tracking</a>
+  <a class="menu-item menu-item-author" href="https://manuelviera.com/author/mviera/">author</a>
 
         </nav>
       </div>
@@ -262,7 +263,7 @@
           2 min read
         </span>
           <span class="single-meta-item single-meta-tag">
-            <a class="post-tag post-tag-tech" href="../../tag/tech/">
+            <a class="post-tag post-tag-tech" href="/tag/tech/">
               #tech
             </a>
           </span>
@@ -273,14 +274,19 @@
       </div>
   </header>
       <div class="single-media kg-width-wide u-placeholder horizontal">
-        <img class="lazyload u-object-fit" data-srcset="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 400w,
-https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 750w,
-https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 960w,
-https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=2000&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ 1140w" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Find and the importance of parameters order">
+        <img class="lazyload u-object-fit"
+          data-srcset="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 400w,
+https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 750w,
+https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 960w,
+https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 1140w"
+          data-sizes="auto"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+          alt="Find and the importance of parameters order"
+        >
       </div>
   <div class="single-content u-text-format">
       <!--kg-card-begin: markdown--><p>Someone texted me with this tweet a few weeks ago. It made me remember how important the order of the parameters in some commands could be. Let's see the tweet.</p>
-<!--kg-card-end: markdown--><figure class="kg-card kg-embed-card"><blockquote class="twitter-tweet" data-width="550"><p lang="en" dir="ltr">I wanted to delete every file called "contents.html" so I ran:<br><br>find -type f -delete -name contents.html<br><br>It worked! But it also deleted every other file.<br><br>find's args are ordered. "delete" works on every match before it, ignoring anything after. "name" should have gone first.</p>— Tomas Sedovic (@TomasSedovic) <a href="https://twitter.com/TomasSedovic/status/1226462687170875398?ref_src=twsrc%5Etfw">February 9, 2020</a></blockquote>
+<!--kg-card-end: markdown--><figure class="kg-card kg-embed-card"><blockquote class="twitter-tweet" data-width="550"><p lang="en" dir="ltr">I wanted to delete every file called &quot;contents.html&quot; so I ran:<br><br>find -type f -delete -name contents.html<br><br>It worked! But it also deleted every other file.<br><br>find&#39;s args are ordered. &quot;delete&quot; works on every match before it, ignoring anything after. &quot;name&quot; should have gone first.</p>&mdash; Tomas Sedovic (@TomasSedovic) <a href="https://twitter.com/TomasSedovic/status/1226462687170875398?ref_src=twsrc%5Etfw">February 9, 2020</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </figure><!--kg-card-begin: markdown--><p>As you may have noticed, some commands, such as find, take its parameters in order. So, this command:</p>
 <pre><code>find -type f -delete -name contents.html
@@ -308,7 +314,7 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
     <footer class="single-footer kg-width-normal">
       <div class="single-footer-left">
           <div class="navigation navigation-previous">
-            <a class="navigation-link" href="../media-consumption-in-july-2020/">
+            <a class="navigation-link" href="/blog/media-consumption-in-july-2020/">
               <svg class="icon navigation-icon"><use xlink:href="#arrow-left"></use></svg>
             </a>
           </div>
@@ -318,7 +324,7 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
           <h3 class="single-footer-title">Published by:</h3>
           <div class="author-list">
               <div class="author-image-placeholder u-placeholder square">
-                <a href="../../author/mviera/" title="Manuel Viera">
+                <a href="/author/mviera/" title="Manuel Viera">
                   <img class="author-image lazyload u-object-fit" data-src="/content/images/size/w150/2020/06/2020-06-22-161222_428x430_scrot.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Manuel Viera">
                 </a>
               </div>
@@ -326,11 +332,11 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
         </div>
         <div class="single-footer-bottom">
           <div class="share">
-            <a class="share-link share-link-facebook" href="https://www.facebook.com/sharer.php?u=http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/" target="_blank" rel="noopener noreferrer">
+            <a class="share-link share-link-facebook" href="https://www.facebook.com/sharer.php?u=https://manuelviera.com/blog/find-and-the-importance-of-parameters-order/" target="_blank" rel="noopener noreferrer">
               <svg class="icon icon-facebook"><use xlink:href="#facebook"></use></svg>
               Share
             </a>
-            <a class="share-link share-link-twitter" href="https://twitter.com/intent/tweet?url=http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/&amp;text=Find%20and%20the%20importance%20of%20parameters%20order" target="_blank" rel="noopener noreferrer">
+            <a class="share-link share-link-twitter" href="https://twitter.com/intent/tweet?url=https://manuelviera.com/blog/find-and-the-importance-of-parameters-order/&text=Find%20and%20the%20importance%20of%20parameters%20order" target="_blank" rel="noopener noreferrer">
               <svg class="icon icon-twitter"><use xlink:href="#twitter"></use></svg>
               Tweet
             </a>
@@ -339,7 +345,7 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
       </div>
       <div class="single-footer-right">
           <div class="navigation navigation-next">
-            <a class="navigation-link" href="../media-consumption-in-august-2020/">
+            <a class="navigation-link" href="/blog/media-consumption-in-august-2020/">
               <svg class="icon navigation-icon"><use xlink:href="#arrow-right"></use></svg>
             </a>
           </div>
@@ -367,7 +373,7 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
     </div>
   </div>
   <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
-  <a class="u-permalink" href="../postgresql-and-read-only-users-the-easiest-way/"></a>
+  <a class="u-permalink" href="/blog/postgresql-and-read-only-users-the-easiest-way/"></a>
 </article>              <article class="feed post featured">
   <div class="feed-calendar">
     <div class="feed-calendar-month">
@@ -385,7 +391,7 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
     </div>
   </div>
   <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
-  <a class="u-permalink" href="../postgresql-and-how-to-shield-your-databases-well/"></a>
+  <a class="u-permalink" href="/blog/postgresql-and-how-to-shield-your-databases-well/"></a>
 </article>              <article class="feed post">
   <div class="feed-calendar">
     <div class="feed-calendar-month">
@@ -403,7 +409,7 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
     </div>
   </div>
   <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
-  <a class="u-permalink" href="../compartiendo-ficheros-con-glusterfs-2/"></a>
+  <a class="u-permalink" href="/blog/compartiendo-ficheros-con-glusterfs-2/"></a>
 </article>              <article class="feed post no-image">
   <div class="feed-calendar">
     <div class="feed-calendar-month">
@@ -421,7 +427,7 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
     </div>
   </div>
   <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
-  <a class="u-permalink" href="../aws-summit-barcelona-2015/"></a>
+  <a class="u-permalink" href="/blog/aws-summit-barcelona-2015/"></a>
 </article>              <article class="feed post no-image">
   <div class="feed-calendar">
     <div class="feed-calendar-month">
@@ -439,7 +445,7 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
     </div>
   </div>
   <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
-  <a class="u-permalink" href="../instalar-solr-en-jetty/"></a>
+  <a class="u-permalink" href="/blog/instalar-solr-en-jetty/"></a>
 </article>          </div>
         </div>
       </div>
@@ -457,7 +463,7 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
   }
   
   var disqus_config = function () {
-    this.page.url = 'http://manuelviera.com/blog/find-and-the-importance-of-parameters-order/';
+    this.page.url = 'https://manuelviera.com/blog/find-and-the-importance-of-parameters-order/';
     this.page.identifier = 'ghost-5f54f68bd6502f239e9073e6';
   };
 
@@ -476,7 +482,7 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
       <a class="social-item social-item-twitter" href="https://twitter.com/mviera" target="_blank" rel="noopener noreferrer">
         <svg class="icon"><use xlink:href="#twitter-box"></use></svg>
       </a>
-    <a class="social-item social-item-rss" href="https://feedly.com/i/subscription/feed/http://manuelviera.com/rss/" target="_blank" rel="noopener noreferrer">
+    <a class="social-item social-item-rss" href="https://feedly.com/i/subscription/feed/https://manuelviera.com/rss.xml" target="_blank" rel="noopener noreferrer">
       <svg class="icon"><use xlink:href="#rss-box"></use></svg>
     </a>
   </div>
@@ -486,7 +492,7 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
 </div>
   <nav class="footer-nav">
     
-    <a class="menu-item js-theme" href="index.html#" data-system="System theme" data-dark="Dark theme" data-light="Light theme">
+    <a class="menu-item js-theme" href="#" data-system="System theme" data-dark="Dark theme" data-light="Light theme">
       <svg class="icon theme-icon theme-icon-system"><use xlink:href="#circle-half-full"></use></svg>
       <svg class="icon theme-icon theme-icon-dark"><use xlink:href="#brightness-2"></use></svg>
       <svg class="icon theme-icon theme-icon-light"><use xlink:href="#white-balance-sunny"></use></svg>
@@ -505,9 +511,9 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
         <div class="popular-wrapper">
           <h4 class="popular-title">Popular tags</h4>
           <div class="popular-feed">
-              <a class="popular" href="../../tag/tech/">tech</a>
-              <a class="popular" href="../../tag/self-tracking/">self-tracking</a>
-              <a class="popular" href="../../tag/offtopic/">offtopic</a>
+              <a class="popular" href="/tag/tech/">tech</a>
+              <a class="popular" href="/tag/self-tracking/">self-tracking</a>
+              <a class="popular" href="/tag/offtopic/">offtopic</a>
           </div>
         </div>
     <div class="search-result"></div>
@@ -576,10 +582,14 @@ https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&amp;
     }
   </script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
   </script>
-  <script src="../../assets/js/main.min.js?v=e156b8919a"></script>
+  <script src="/assets/js/main.min.js?v=67116d8245"></script>
 
 
   
 </body>
+</html>
