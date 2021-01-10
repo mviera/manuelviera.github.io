@@ -2982,7 +2982,7 @@ body:not(.paged-next) .infinite-scroll-button {
   font-weight: 700;
   text-transform: uppercase;
 }
-.u-text-format p a {
+.u-text-format p a, ul li a {
   font-family: monospace;
   color: #eaa700;
   font-weight: bold;
@@ -3224,7 +3224,7 @@ time {
   letter-spacing: 0.7px;
 }
 
-.theme-dark .u-text-format p a {
+.theme-dark .u-text-format p a, ul li a {
   font-family: monospace;
   color: var(--brand-color);
   font-weight: bold;
